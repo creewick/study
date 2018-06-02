@@ -26,7 +26,7 @@
 
 Операционные системы
 
-[C#](https://ulearn.me)		C++		Python		Java
+[C#](https://ulearn.me)			C++			Python			Java
 
 ### Гуманитарные
 
