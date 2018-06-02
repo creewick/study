@@ -2,7 +2,7 @@
 
 ## Предметы
 
-[Диффуры](study/diffur/types)
+[Диффуры](diffur/types)
 
 ## Для чего
 
