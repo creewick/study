@@ -1,0 +1,4 @@
+[study](../) > [inet](./) > inetmin
+
+# inetmin
+
