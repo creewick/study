@@ -1,4 +1,4 @@
-[study](./../../) > [inet](./../) > [routing](./) > ospf
+[study](./../) > [inet](./) > ospf
 
 # OSPF
 

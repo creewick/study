@@ -1,4 +1,4 @@
-[study](./../../) > [inet](./../) > [routing](./) > rip
+[study](./../) > [inet](./) > rip
 
 # RIP
 
