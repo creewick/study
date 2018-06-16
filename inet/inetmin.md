@@ -16,10 +16,10 @@
 
 			 *Router LSA, Network LSA, Summary LSA, AS Summary LSA*
 
-#### Протокол BGP
+#### [Протокол BGP](bgp#header-n3)
 
-* Определение автономной системы в Интернете (+как менялось со временем)
-* Инструменты управления BGP трафиком
+* [Определение автономной системы в Интернете (+как менялось со временем)](as#header-n3)
+* [Инструменты управления BGP трафиком](bgp/traffic)
 
 			 *AS_Path prepend, MED, Weight, Community, Local Preference, BGP multipath, анонс разных префиксов через разных ISP, AS-Path ACL*
 
