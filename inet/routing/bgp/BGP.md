@@ -1,4 +1,4 @@
-[study](./../../) > [inet](./../) > [routing](./) > bgp
+[study](../../../) > [inet](../../) > [routing](../) > bgp
 
 # Протокол BGP
 
