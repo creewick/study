@@ -42,7 +42,7 @@ zone "vvsu.ru" {
 
 zone "vsue.ru" {
      type slave;
-     masters { 212.16.198.4; };
+     masters {212.16.198.4;};
      file "vsue.hosts";
 };
 
@@ -113,7 +113,7 @@ zone "." {
 
 			При каждом внесении изменений необходимо увеличивать
 
-			Обычно записывается в формате `YYYY` `MM` `DD` `nn`
+	Обычно записывается в формате `YYYY` `MM` `DD` `nn`
 
 * **REFRESH** - Период запроса на обновление данных со стороны вторичного сервера
 * **RETRY** - Время ожидания после неудачной попытки запроса
@@ -124,11 +124,11 @@ zone "." {
 
 ```pseudocode
 vvsu.ru. IN SOA maria.vvsu.ru. dns.maria.vvsu.ru.(
-                             1997120802 ;   Serial
-                             10800 ;        Refresh 3 hours
-                             3600  ;        Retry   1 hour
-                             3600000 ;      Expire 1000 hrs
-                             86400 );       Min 24 hours
+         1997120802 ;   Serial
+         10800 ;        Refresh 3 hours
+         3600  ;        Retry   1 hour
+         3600000 ;      Expire 1000 hrs
+         86400 );       Min 24 hours
 ```
 
 
@@ -144,8 +144,8 @@ vvsu.ru. IN SOA maria.vvsu.ru. dns.maria.vvsu.ru.(
 Пример:
 
 ```pseudocode
-vvsu.ru.     IN      NS      maria.vvsu.ru.
-             IN      NS      ints.vtc.ru.
+vvsu.ru.	IN	NS	maria.vvsu.ru.
+        	IN	NS	ints.vtc.ru.
 ```
 
 
@@ -164,9 +164,9 @@ vvsu.ru.     IN      NS      maria.vvsu.ru.
 Пример:
 
 ```pseudocode
-vvsu.ru.             IN      MX      10  wildcat.vvsu.ru.
-                     IN      MX      20  maria.vvsu.ru.
-specialmail.vvsu.ru  IN      MX      10  maria.vvsu.ru
+vvsu.ru.           	IN	MX	10	wildcat.vvsu.ru.
+                   	IN	MX	20	maria.vvsu.ru.
+specialmail.vvsu.ru	IN	MX	10	maria.vvsu.ru
 ```
 
 При отсутствии записи MX для какого-либо доменного имени, почта будет доставляться непосредственно на хост, имеющий такое имя. 
@@ -186,13 +186,13 @@ specialmail.vvsu.ru  IN      MX      10  maria.vvsu.ru
 Пример:
 
 ```pseudocode
-gw           IN      A       212.16.195.1
+gw         	IN	A	212.16.195.1
 ```
 
 Эта запись, находящаяся в зоне *vvsu.ru*, эквивалентна следующей:
 
 ```pseudocode
-gw.vvsu.ru.  IN      A       212.16.195.1
+gw.vvsu.ru.	IN	A	212.16.195.1
 ```
 
 
@@ -208,7 +208,7 @@ gw.vvsu.ru.  IN      A       212.16.195.1
 Пример:
 
 ```pseudocode
-www            IN      CNAME     wildcat.vvsu.ru.
+www        	IN	CNAME	wildcat.vvsu.ru.
 ```
 
 Эта запись, находящаяся в зоне *vvsu.ru*, означает, что *www.vvsu.ru* = *wildcat.vvsu.ru.* При переносе WWW-сервера на другой компьютер, достаточно будет изменить только эту строку в файле зоны, чтобы ссылки на него заработали
