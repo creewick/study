@@ -23,7 +23,7 @@
 
 			 *AS_Path prepend, MED, Weight, Community, Local Preference, BGP multipath, анонс разных префиксов через разных ISP, AS-Path ACL*
 
-#### Типы записей DNS (+формат значений)
+#### [Типы записей DNS (+формат значений)](dns/conf)
 
 ​	 *SOA, NS, A, CNAME, MX, PTR, DS, DNSKEY, RRSIG, SPF*
 
