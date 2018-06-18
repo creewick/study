@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>DNSSEC</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.first-line-indent #write p .md-line { text-indent: 0px; }
+.first-line-indent #write li, .first-line-indent #write p, .first-line-indent #write p .md-line:first-child { text-indent: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write > blockquote:first-child, #write > div:first-child, #write > figure:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > ul:first-child { margin-top: 30px; }
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+h1, h2, h3, h4, h5, h6 { margin-top: 1rem; margin-bottom: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0px; -webkit-margin-after: 0px; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+pre.contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.CodeMirror-line { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+.footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
+.md-line > .md-image:only-child, p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: normal; src: local("Open Sans Regular"), url("./github/400.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: normal; src: local("Open Sans Italic"), url("./github/400i.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: bold; src: local("Open Sans Bold"), url("./github/700.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
+.md-fences, code, tt { border: 1px solid rgb(223, 226, 229); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media screen and (min-width: 914px) {
+}
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+
+
+
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><p><a href='../../../'>study</a> &gt; <a href='../../'>inet</a> &gt; <a href='../'>dns</a> &gt; dnssec</p><h2><a name='header-n138' class='md-header-anchor '></a>DNSSEC</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h2" data-ref="n138"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n138">DNSSEC</a></span><span class="md-toc-item md-toc-h3" data-ref="n3"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n3">Немного истории</a></span><span class="md-toc-item md-toc-h3" data-ref="n6"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n6">Что такое DNSSEC</a></span><span class="md-toc-item md-toc-h3" data-ref="n11"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n11">Как это работает</a></span><span class="md-toc-item md-toc-h3" data-ref="n14"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n14">Механизм работы</a></span><span class="md-toc-item md-toc-h3" data-ref="n44"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n44">Цепочка доверия</a></span><span class="md-toc-item md-toc-h3" data-ref="n67"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n67">Оказываемые эффекты</a></span><span class="md-toc-item md-toc-h3" data-ref="n84"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n84">Ресурсные записи DNSSEC</a></span><span class="md-toc-item md-toc-h4" data-ref="n91"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n91">Пример DNSKEY</a></span><span class="md-toc-item md-toc-h3" data-ref="n100"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n100">Интернациональные доменные имена</a></span><span class="md-toc-item md-toc-h4" data-ref="n113"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n113">Примеры Punycode преобразования</a></span></p></div><h3><a name='header-n3' class='md-header-anchor '></a>Немного истории</h3><p>​<span>	</span>Изначально система доменных имен не имела никаких механизмов для защиты от подмены информации в ответе — архитектура системы такова, что и запрос, и ответ передаются чистым текстом. При этом резолвер судил о верности полученной информации только по идентификатору запроса, длина которого всего 2 байта. То есть чтобы отравить кэш нужно было просто перебрать 65536 значений. говорить об этом начали еще в 90-х. При этом принялись неспешно описывать первую редакцию DNSSEC. Она увидела свет в 1997, через два года появилась следующая. В 2005 появилась нынешняя редакция DNSSEC, с которой все и работают. Знаковое событие случилось в 2008 году, когда Дэн Камински показал миру, что отравить кэш можно за 10 секунд. Производители DNS софта ответили тем, что кроме идентификатора запроса стали рандомно выбирать исходящий порт. Попутно началась истерия по поводу внедрения DNSSEC.</p><h3><a name='header-n6' class='md-header-anchor '></a>Что такое DNSSEC</h3><p><strong>Domain Name System Security Extensions DNSSEC</strong> – набор расширений протокола DNS, позволяющих минимизировать атаки, связанные с подменой DNS-адреса при разрешении доменных имен. </p><p>​<span>	</span>DNSSEC является технологией, разработанной, помимо всего прочего, для защиты от атак с помощью цифрового &quot;подписывания&quot; данных, которое позволяет быть уверенным в их достоверности . Однако для устранения данной уязвимости Интернета необходимо использовать данную технологию на каждом этапе поиска, начиная с корневой зоны и заканчивая последним доменным именем ( например <a href='http://www.icann.org' target='_blank' class='url'>www.icann.org</a>). Подпись корня (использование технологии DNSSEC в корневой зоне) является необходимым действием во всем процессе. Важно отметить, что при этом данные не шифруются . Технология просто позволяет убедиться в достоверности адреса посещаемого сайта .</p><h3><a name='header-n11' class='md-header-anchor '></a>Как это работает</h3><p>​<span>	</span>Принцип работы DNSSEC тот же, что и у цифровой подписи. То есть закрытым ключом подписываем, открытым сверяем. Особенность состоит в том, что DNSSEC использует два типа ключей — одним подписывается зона (ZSK, zone signing key), другим подписывается набор ключей (KSK, key signing key). Сделано это из таких соображений: зона может быть достаточно большой чтобы удалось подобрать закрытый ключ, поэтому его надо менять почаще, да и сделать его можно покороче, чтобы зоны подписывались быстрее; KSK же используется для небольших объемов данных, поэтому его можно и подлиннее сделать и менять пореже. Тем более, что хэш от открытой части KSK требуется отправить в родительскую зону, что хотелось бы делать не слишком часто. </p><h3><a name='header-n14' class='md-header-anchor '></a>Механизм работы</h3><p>Допустим мы хотим узнать адрес test.bar.example.com:</p><ol start='' ><li>Мы запрашиваем доменное имя у резолвера;</li><li>Резолвер выставляет бит DO и запрашивает test.bar.example.com у корневого сервера;</li><li>Резолвер знает, что корневая доменная зона подписана — у него указан ключ или хэш ключа для нее (так называемый trust-anchor), поэтому он запрашивает у корневого сервера DNSKEY записи для корневой зоны и сверяет полученное с имеющимся;</li><li>Корневой сервер не знает такого доменного имени, да и вообще максимум что ему известно — на каких серверах располагается зона com, он и сообщает адреса этих серверов нашему резолверу вместе с подписанной DS записью для зоны com;</li><li>Резолвер валидирует DS запись полученным и проверенным ZSK ключом корневой зоны;</li><li>Теперь резолвер знает, что зона com подписана, так что он спрашивает у ее DNS сервера DNSKEY и валидирует их, после чего интересуется про bar.example.com. Естественно, что сервер зоны com про таких не знает, ему только известно, что зона example.com живет на ns.example.com и ns1.example.com, именно это он и отвечает резолверу вместе с — да-да — DS записью;</li><li>Так резолвер выстроил цепочку доверия до example.com, где он узнает серверы имен зоны bar.example.com и ее DS;</li><li>В конце концов резолвер итеративно узнает адреса DNS серверов, отвечающих за bar.example.com, идет к ним и наконец-то получает желаемое, валидирует всю информацию и отдает нам адресную запись, выставив в ответе бит AD.</li></ol><p>При невозможности что-то провалидировать резолвер вернет servfail.</p><h3><a name='header-n44' class='md-header-anchor '></a>Цепочка доверия</h3><p>​<span>	</span>Как всё это работает? DNSSEC привязана к административной иерархии глобальной (общепринятой) системы доменных имён (DNS). То есть, для каждого домена должна быть построена &quot;цепочка доверия&quot;, ведущая от записей данного домена через различные криптографические ключи к корневому домену. Более детальное описание конкретного решения в случае nox.su приведено ниже. </p><p><img src='D:\study\inet\dns\dnssec\img\Пример цепочка доверия.png' alt='Пример цепочка доверия' referrerPolicy='no-referrer' /></p><ol start='' ><li><p>Nox.su - домен второго уровня, находится в зоне .su, которая, в свою очередь, принадлежит к корневой зоне (&quot;.&quot;) DNS. Корневой доменной зоне соответствует KSK (Key Signing Key) с id=19036. Запись DNSKEY содержит публичную часть данного KSK, которая позволяет проверить подписи, сделанные с его помощью. В нашем случае этим ключом подписаны две записи: публичная часть KSK (на схеме отражено при помощи &quot;возвратной&quot; стрелки) и публичная часть ZSK (Zone Signing Key) - ключа, используемого для подписывания всех остальных записей корневой зоны.</p><p>(KSK служит исключительно для установления связки в цепочке доверия между вышестоящей зоной и внутренним, для данной зоны, ключом ZSK. Такой подход, кроме прочего, позволяет оптимизировать управление ключами.)</p><p>В корневой зоне соответствующий ZSK (DNSKEY c id=51201) удостоверяет две DS-записи, относящиеся к ключам из расположенной ниже зоны .su. Это первое звено цепочки доверия в нашей схеме. DS-записи содержат хеши (SHA-1 и SHA-256) публичных частей ключей KSK, используемых в .su (id=1509,id=19071 - см. следующий блок на схеме). Таких ключей два, что позволяет проводить ротацию ключей без нарушения работоспособности процедур валидации для данной зоны (один ключ заменяет другой, при этом оба заранее размещены в зоне).</p></li><li><p>Зона .su использует собственный ZSK (id=41948), при помощи которого подписана DS-запись, соответствующая KSK зоны nox.su. То есть, использована та же процедура, что и для звена &quot;корневая зона - .su&quot;. Единственное отличие: указана только одна DS-запись. Это связано с тем, что в nox.su - только один ключ KSK. Таким образом, для того, чтобы изменить этот ключ, потребуется внести в зону .su новую DS-запись. (Строго говоря, использование только одной DS-записи не является лучшей практикой, однако такое решение вполне допустимо. Например, если потребуется провести плановую ротацию ключей для nox.su, то вторую DS-запись можно разместить заранее. Проблема возникнет только при необходимости внезапной, незамедлительной смены ключа.)</p></li><li><p>Как нетрудно узнать из DNS, зону nox.su поддерживают минимум два NS-а. В зоне они обзначены так: ns1.8191.ru и ns2.8191.ru. Сейчас, 26.05.13, в DNS имена серверов изменены, но, как было указано выше, для настоящей статьи это не важно. Именно эти два сервера и содержат информацию об адресации внутри упомянутой зоны. Техническое решение практически стандартное: Linux + BIND 9.7. (утилиты dnssec-signzone и др.).</p><p>При помощи KSK (id=47341 на схеме) подписаны два ZSK (id=23208, id=17166). ZSK 23208 - удостоверяет остальные записи в зоне (в том числе и сам этот ZSK, что, в общем, избыточно). Второй ZSK не используется, но размещён в зоне для обеспечения возможности быстрой ротации ключей. (В предыдущей версии зоны nox.su использовался только один ZSK. Сейчас пробуем два.)</p><p><img src='D:\study\inet\dns\dnssec\img\Пример DNSSEC.png' alt='Пример DNSSEC' referrerPolicy='no-referrer' /></p></li></ol><h3><a name='header-n67' class='md-header-anchor '></a>Оказываемые эффекты</h3><ol start='' ><li>Исходящий трафик авторитетного DNS сервера увеличивается примерно в 4 раза;</li><li>Размер файла зоны после подписи (без OPT-OUT) вырастает в 6-7 раз;</li><li>Увеличение длины ключа приводит к заметному снижению qps резолвера, на авторитетный сервер влияет в меньшей степени;</li><li>Наоборот действует увеличение кол-ва итераций при использовании NSEC3;</li><li>DNSSEC приводит к значительному увеличению DNS ответа и, следовательно, необходимо чтобы все сетевое оборудование корректно работало с DNS пакетами более 512 байт.</li></ol><h3><a name='header-n84' class='md-header-anchor '></a>Ресурсные записи DNSSEC</h3><p><strong>DS (Delegation Signer)</strong> – для идентификации ключа делегированной зоны. Содержит значение хеш-функции, открытого ключа, который должен находиться в одной из DNSKEY-записей делегируемой зоны. Размещается в делегирующей зоне, при условии наличия NS- записей для зоны делегируемой. </p><p><strong>DNSKEY (DNS Key)</strong>– для публикации криптографических ключей в зоне. Содержит тип ключа, используемый алгоритм, сам ключ. </p><p><strong>RRSIG (Signature RR)</strong> – для подписания других ресурсных записей. Содержит значения подписей, сгенерированных для наборов ресурсных записей зоны. Валидность той или иной подписи может быть проверена при помощи ключей, размещённых в соответствующих DNSKEY-записях. </p><h4><a name='header-n91' class='md-header-anchor '></a>Пример DNSKEY</h4><blockquote><p>Тип протокола = 3, всегда 3 для DNSSEC </p></blockquote><blockquote><p>Код алгоритма = 5, соответствует RSA с использованием SHA1 </p></blockquote><p><img src='D:\study\inet\dns\dnssec\img\Пример DNSKEY.png' alt='Пример DNSKEY' referrerPolicy='no-referrer' /></p><h3><a name='header-n100' class='md-header-anchor '></a>Интернациональные доменные имена</h3><p><strong>IDN (Internationalized Domain Names)</strong> – доменные имена, которые содержат символы национальных алфавитов. </p><p>президент.рф </p><p>مصر. </p><p>Для поддержки IDN достаточно, чтобы их понимал браузер. </p><p><strong>Punycode</strong> – стандартизированный метод преобразования последовательностей Unicode-символов в ACE- последовательности (ASCII Compatible Encoding). </p><p>Преобразованные имена должны начинаться с префикса: xn-- <a href='http://xn--80acd.com' target='_blank' class='url'>http://xn--80acd.com</a> – IDN в Punycode-представлении, <a href='http://80acd.com' target='_blank' class='url'>http://80acd.com</a> – обычное доменное имя. </p><h4><a name='header-n113' class='md-header-anchor '></a>Примеры Punycode преобразования</h4><figure><table><thead><tr><th>Последовательность символов</th><th>Кодировка</th></tr></thead><tbody><tr><td>abcdef</td><td>abcdef</td></tr><tr><td>abæcdöef</td><td>abcdef-qua4k</td></tr><tr><td>schön</td><td>schn-7qa</td></tr><tr><td>ยจฆฟคฏข</td><td>22cdfh1b8fsa</td></tr><tr><td>☺</td><td>74h</td></tr><tr><td>правда</td><td>80aafi6cg</td></tr></tbody></table></figure><p>&nbsp;</p></div>
+</body>
+</html>

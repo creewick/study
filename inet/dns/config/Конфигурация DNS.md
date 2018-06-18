@@ -1,4 +1,4 @@
-[study](../../) > [inet](../) > [dns](./) > config
+[study](../../../) > [inet](../../) > [dns](../) > config
 
 # Конфигурация DNS сервера
 
@@ -249,20 +249,6 @@ www        	IN	CNAME	wildcat.vvsu.ru.
 
 
 
-#### DS (Delegation Signer)
-
-
-
-#### DNSKEY
-
-
-
-#### RRSIG (DNSSEC signature)
-
-
-
-
-
 #### SPF (Sender Policy Framework)
 
 Указывает сервера, которые могут отправлять почту от имени домена
@@ -293,7 +279,7 @@ site.ru	IN	TXT	v=spf1 include:_spf.hosting.reg.ru ip4:37.140.192.92 a mx ~all
 
 Технология этого преобразования сильно не отличается от обычного DNS-преобразования. Используется специальный домен *in-addr.arpa*., слева от которого в обратном порядке записывается IP-адрес. 
 
-![in-addr](in-addr.gif)
+![in-addr](img/in-addr.gif)
 
 Поиск производится по обычному алгоритму:
 
@@ -348,4 +334,3 @@ site.ru	IN	TXT	v=spf1 include:_spf.hosting.reg.ru ip4:37.140.192.92 a mx ~all
 	IN	NS	ns.rosprint.net.
 1	IN	PTR	localhost.
 ```
-
