@@ -1,4 +1,4 @@
-[study](../) > [inet](./) > inetmin
+[study](../../) > [inet](../) > inetmin
 
 # inetmin
 
