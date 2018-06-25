@@ -1,29 +1,29 @@
-[study](../) > [inet](./) > inetmin
+[study](../../) > [inet](../) > inetmin
 
 # inetmin
 
 #### [Протокол OSPF](routing.html#header-n124)
 
-* [Виды зон OSPF (+чем отличаются)](routing/ospf.html#header-n114)
+* [Виды зон OSPF (+чем отличаются)](../routing/ospf.html#header-n114)
 
 			 *Backbone, Norma, Stub, Totally Stub, NSSA, Totally NSSA*
 
-* [Виды маршрутизаторов](routing/ospf.html#header-n148)
+* [Виды маршрутизаторов](../routing/ospf.html#header-n148)
 
 			 *Internal, Area border, Backbone, ASBR*
 
-* [Объявления о состоянии канала LSA (+для чего нужны)](routing/ospf.html#header-n162)
+* [Объявления о состоянии канала LSA (+для чего нужны)](../routing/ospf.html#header-n162)
 
 			 *Router LSA, Network LSA, Summary LSA, AS Summary LSA*
 
 #### [Протокол BGP](bgp#header-n3)
 
-* [Определение автономной системы в Интернете (+как менялось со временем)](as#header-n3)
-* [Инструменты управления BGP трафиком](bgp/traffic)
+* [Определение автономной системы в Интернете (+как менялось со временем)](../as#header-n3)
+* [Инструменты управления BGP трафиком](../bgp/traffic)
 
 			 *AS_Path prepend, MED, Weight, Community, Local Preference, BGP multipath, анонс разных префиксов через разных ISP, AS-Path ACL*
 
-#### [Типы записей DNS (+формат значений)](dns/conf)
+#### [Типы записей DNS (+формат значений)](../dns/conf)
 
 ​	 *SOA, NS, A, CNAME, MX, PTR, DS, DNSKEY, RRSIG, SPF*
 
