@@ -3,9 +3,11 @@ from io import TextIOWrapper
 from os.path import join
 from sys import argv
 from re import match
+import logging
 
 
 def main():
+    logging.basicConfig(filename='log', level='INFO')
     for folder, file in get_files(dir=argv[1]):
         if is_md(file):
             menu = get_menu(folder, root=argv[2])
@@ -46,10 +48,12 @@ def try_replace_menu(folder, file, menu):
                 with open(path, 'w') as new:
                     replace_menu(old, new, menu)
             remove(_path)
+            logging.info(f'path: {path}, ok')
         except:
+            logging.info(f'path: {path}, canceled')
             rename(_path, path)
     except:
-        pass
+        logging.info(f'path: {path}, skipped')
 
 
 def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu):
