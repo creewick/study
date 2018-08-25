@@ -1,27 +1,37 @@
 from os import walk, rename, remove, sep
+from argparse import ArgumentParser
+from re import match, compile
 from io import TextIOWrapper
 from os.path import join
-from sys import argv
-from re import match
 import logging
+
+
+regex = compile(r'(\[.*?\]\((..\/)*\) > )')
 
 
 def main():
     logging.basicConfig(filename='log', level='INFO')
-    for folder, file in get_files(dir=argv[1]):
-        if is_md(file):
-            menu = get_menu(folder, root=argv[2])
+    args = get_args()
+
+    for folder, file in get_files_paths(dir=args.root):
+        if file.endswith('.md'):
+            menu = get_menu(folder, root=args.name)
             try_replace_menu(folder, file, menu)
 
 
-def get_files(dir):
+def get_args():
+    parser = ArgumentParser(description='Update navigation links.')
+    parser.add_argument('-r', '--root', type=str, required=True,
+                        help='navigation start folder')
+    parser.add_argument('-n', '--name', type=str, required=True,
+                        help='navigation start name')
+    return parser.parse_args()
+
+
+def get_files_paths(dir):
     for folder, _, files in walk(dir):
         for name in files:
             yield folder, name
-
-
-def is_md(file):
-    return file[-3:] == '.md'
 
 
 def get_menu(path, root):
@@ -50,8 +60,8 @@ def try_replace_menu(folder, file, menu):
             remove(_path)
             logging.info(f'path: {path}, ok')
         except:
-            logging.info(f'path: {path}, canceled')
             rename(_path, path)
+            logging.info(f'path: {path}, canceled')
     except:
         logging.info(f'path: {path}, skipped')
 
@@ -72,8 +82,8 @@ def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu):
 
 
 def is_menu(line):
-    return match(r'(\[.*?\]\((..\/)*\) > )',
-                 line) is not None
+    global regex
+    return match(regex, line) is not None
 
 
 if __name__ == '__main__': main()
