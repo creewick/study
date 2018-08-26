@@ -6,22 +6,20 @@ from os.path import join
 import logging
 
 
-regex = compile(r'(\[.*?\]\((..\/)*\) > )')
-
-
 def main():
     logging.basicConfig(filename='log', level='INFO')
     args = get_args()
+    regex = compile(rf'(\[.*?\]\((..\/)*\) > |{args.name})')
 
-    for folder, file in get_files_paths(dir=args.root):
+    for folder, file in get_files_paths(dir=args.dir):
         if file.endswith('.md'):
-            menu = get_menu(folder, root=args.name)
-            try_replace_menu(folder, file, menu)
+            menu = get_menu(folder, name=args.name)
+            try_replace_menu(folder, file, menu, regex)
 
 
 def get_args():
     parser = ArgumentParser(description='Update navigation links.')
-    parser.add_argument('-r', '--root', type=str, required=True,
+    parser.add_argument('-d', '--dir', type=str, required=True,
                         help='navigation start folder')
     parser.add_argument('-n', '--name', type=str, required=True,
                         help='navigation start name')
@@ -34,9 +32,9 @@ def get_files_paths(dir):
             yield folder, name
 
 
-def get_menu(path, root):
+def get_menu(path, name):
     folders = path.split(sep)
-    folders[0] = root
+    folders[0] = name
     count = len(folders)
 
     for i in range(count-1):
@@ -48,7 +46,7 @@ def get_menu(path, root):
     return ' > '.join(folders) + '\n\n'
 
 
-def try_replace_menu(folder, file, menu):
+def try_replace_menu(folder, file, menu, regex):
     _path = join(folder, f'_{file}')
     path = join(folder, file)
     try:
@@ -56,23 +54,23 @@ def try_replace_menu(folder, file, menu):
         try:
             with open(_path, 'r') as old:
                 with open(path, 'w') as new:
-                    replace_menu(old, new, menu)
+                    replace_menu(old, new, menu, regex)
             remove(_path)
             logging.info(f'path: {path}, ok')
         except:
             rename(_path, path)
-            logging.info(f'path: {path}, canceled')
+            logging.error(f'path: {path}, canceled')
     except:
-        logging.info(f'path: {path}, skipped')
+        logging.warning(f'path: {path}, skipped')
 
 
-def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu):
+def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu, regex):
     new.write(menu)
     text_started = False
     line = old.readline()
 
     while line != '':
-        if not text_started and is_menu(line):
+        if not text_started and is_menu(line, regex):
             old.readline()
         else:
             text_started = True
@@ -81,8 +79,7 @@ def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu):
         line = old.readline()
 
 
-def is_menu(line):
-    global regex
+def is_menu(line, regex):
     return match(regex, line) is not None
 
 
