@@ -58,6 +58,7 @@ def try_replace_menu(folder, file, menu, regex):
             remove(_path)
             logging.info(f'path: {path}, ok')
         except Exception as e:
+            remove(path)
             rename(_path, path)
             logging.error(f'path: {path}, canceled: {e}')
     except Exception as e:
@@ -74,7 +75,7 @@ def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu, regex):
             old.readline()
         else:
             text_started = True
-            new.write(line)
+            new.write(line.encode('ascii', 'ignore').decode('ascii'))
 
         line = old.readline()
 
