@@ -1,4 +1,4 @@
-[study](../../) > [inet](../) > http
+[home](../../) > [inet](../) > http
 
 # Протокол HTTP
 

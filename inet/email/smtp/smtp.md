@@ -1,4 +1,4 @@
-[study](../../../) > [inet](../../) > [email](../) > smtp
+[home](../../../) > [inet](../../) > [email](../) > smtp
 
 # SMTP
 

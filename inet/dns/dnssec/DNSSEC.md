@@ -1,4 +1,4 @@
-[study](../../../) > [inet](../../) > [dns](../) > dnssec
+[home](../../../) > [inet](../../) > [dns](../) > dnssec
 
 # DNSSEC
 

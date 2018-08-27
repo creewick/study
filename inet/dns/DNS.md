@@ -1,4 +1,4 @@
-[study](../../) > [inet](../) > dns
+[home](../../) > [inet](../) > dns
 
 # DNS
 

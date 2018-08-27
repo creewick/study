@@ -1,0 +1,1 @@
+start py auto-menu-updater/amu.py -d . -n home
