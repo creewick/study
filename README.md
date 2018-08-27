@@ -1,4 +1,6 @@
-<title>ФИИТ-302 - Главная</title>
+<script>
+	document.title = 'ФИИТ-302';
+</script>
 
 ## Расписание
 
