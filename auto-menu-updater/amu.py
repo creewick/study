@@ -57,11 +57,11 @@ def try_replace_menu(folder, file, menu, regex):
                     replace_menu(old, new, menu, regex)
             remove(_path)
             logging.info(f'path: {path}, ok')
-        except:
+        except Exception as e:
             rename(_path, path)
-            logging.error(f'path: {path}, canceled')
-    except:
-        logging.warning(f'path: {path}, skipped')
+            logging.error(f'path: {path}, canceled: {e}')
+    except Exception as e:
+        logging.warning(f'path: {path}, skipped: {e}')
 
 
 def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu, regex):
