@@ -49,20 +49,21 @@ def get_menu(path, name):
 def try_replace_menu(folder, file, menu, regex):
     _path = join(folder, f'_{file}')
     path = join(folder, file)
+    log_path = path.encode('ascii', 'ignore').decode('ascii')
     try:
         rename(path, _path)
         try:
-            with open(_path, 'r') as old:
-                with open(path, 'w') as new:
+            with open(_path, 'r', encoding='utf-8', errors='ignore') as old:
+                with open(path, 'w', encoding='utf-8', errors='ignore') as new:
                     replace_menu(old, new, menu, regex)
             remove(_path)
-            logging.info(f'path: {path}, ok')
+            logging.info(f'path: {log_path}, ok')
         except Exception as e:
             remove(path)
             rename(_path, path)
-            logging.error(f'path: {path}, canceled: {e}')
+            logging.error(f'path: {log_path}, canceled: {e}')
     except Exception as e:
-        logging.warning(f'path: {path}, skipped: {e}')
+        logging.warning(f'path: {log_path}, skipped: {e}')
 
 
 def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu, regex):
@@ -75,7 +76,7 @@ def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu, regex):
             old.readline()
         else:
             text_started = True
-            new.write(line.encode('ascii', 'ignore').decode('ascii'))
+            new.write(line)
 
         line = old.readline()
 
