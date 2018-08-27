@@ -7,7 +7,7 @@ import logging
 
 
 def main():
-    logging.basicConfig(filename='log', level='INFO')
+    logging.basicConfig(filename='log')
     args = get_args()
     regex = compile(rf'(\[.*?\]\((..\/)*\) > |{args.name})')
 
