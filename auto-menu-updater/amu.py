@@ -11,7 +11,7 @@ def main():
     latex_script = """<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script><script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>\n\n"""
     logging.basicConfig(filename='log')
     args = get_args()
-    menu_regex = compile(rf'(\[.*?\]\((..\/)*\) > |{args.name})')
+    menu_regex = compile(r'(\[.*?\]\((..\/)*\) > |{args.name})')
     latex_regex = compile(r'<script type="text/x-mathjax-config">')
 
     for folder, file in get_files_paths(dir=args.dir):
@@ -41,12 +41,13 @@ def get_menu(path, file, root):
 
     for i in range(len(folders)-1):
         title = folders[i]
-        url = '../' * (len(folders)-i)
+        url = '../' * (len(folders)-1-i)
 
         folders[i] = f'[{title}]({url})'
     
-    if file == 'index.md':
+    if file != 'index.md':
         folders[-1] = f'[{folders[-1]}](./)'
+        folders.append(file[:-3])
     
     return ' > '.join(folders) + '\n\n'
 
