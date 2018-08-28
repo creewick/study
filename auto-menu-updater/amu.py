@@ -8,7 +8,7 @@ import logging
 
 def main():
     global latex_script
-    latex_script = """<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script><script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>\n\n"""
+    latex_script = """<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script><script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>\n"""
     logging.basicConfig(filename='log')
     args = get_args()
     menu_regex = compile(r'(\[.*?\]\((..\/)*\) > |{args.name})')
@@ -49,7 +49,7 @@ def get_menu(path, file, root):
         folders[-1] = f'[{folders[-1]}](./)'
         folders.append(file[:-3])
     
-    return ' > '.join(folders) + '\n\n'
+    return ' > '.join(folders) + '\n'
 
 
 def try_update_file(folder, file, menu, menu_regex, latex_regex):
@@ -83,7 +83,8 @@ def update_file(old: TextIOWrapper, new: TextIOWrapper, menu, menu_regex, latex_
         if not text_started and match(menu_regex, line) or match(latex_regex, line):
             old.readline()
         else:
-            text_started = True
+            if line != '\n':
+                text_started = True
             new.write(line)
 
         line = old.readline()
