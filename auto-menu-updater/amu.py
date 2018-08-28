@@ -16,7 +16,7 @@ def main():
 
     for folder, file in get_files_paths(dir=args.dir):
         if file.endswith('.md'):
-            menu = get_menu(folder, name=args.name)
+            menu = get_menu(folder, file, root=args.name)
             try_update_file(folder, file, menu, menu_regex, latex_regex)
 
 
@@ -35,17 +35,19 @@ def get_files_paths(dir):
             yield folder, name
 
 
-def get_menu(path, name):
+def get_menu(path, file, root):
     folders = path.split(sep)
-    folders[0] = name
-    count = len(folders)
+    folders[0] = root
 
-    for i in range(count-1):
+    for i in range(len(folders)-1):
         title = folders[i]
-        url = '../' * (count-1-i)
+        url = '../' * (len(folders)-i)
 
         folders[i] = f'[{title}]({url})'
-
+    
+    if file == 'index.md':
+        folders[-1] = f'[{folders[-1]}](./)'
+    
     return ' > '.join(folders) + '\n\n'
 
 
