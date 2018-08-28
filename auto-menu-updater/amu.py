@@ -80,12 +80,12 @@ def update_file(old: TextIOWrapper, new: TextIOWrapper, menu, menu_regex, latex_
     line = old.readline()
 
     while line != '':
-        if not text_started and match(menu_regex, line) or match(latex_regex, line):
-            old.readline()
-        else:
-            if line != '\n':
-                text_started = True
+        if text_started:
             new.write(line)
+        else:
+            if not match(menu_regex, line) and not match(latex_regex, line) and line != '\n':
+                text_started = True
+                new.write(line)
 
         line = old.readline()
 
