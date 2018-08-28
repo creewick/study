@@ -7,14 +7,17 @@ import logging
 
 
 def main():
+    global latex_script
+    latex_script = """<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script><script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>\n\n"""
     logging.basicConfig(filename='log')
     args = get_args()
-    regex = compile(rf'(\[.*?\]\((..\/)*\) > |{args.name})')
+    menu_regex = compile(rf'(\[.*?\]\((..\/)*\) > |{args.name})')
+    latex_regex = compile(r'<script type="text/x-mathjax-config">')
 
     for folder, file in get_files_paths(dir=args.dir):
         if file.endswith('.md'):
             menu = get_menu(folder, name=args.name)
-            try_replace_menu(folder, file, menu, regex)
+            try_update_file(folder, file, menu, menu_regex, latex_regex)
 
 
 def get_args():
@@ -46,7 +49,7 @@ def get_menu(path, name):
     return ' > '.join(folders) + '\n\n'
 
 
-def try_replace_menu(folder, file, menu, regex):
+def try_update_file(folder, file, menu, menu_regex, latex_regex):
     _path = join(folder, f'_{file}')
     path = join(folder, file)
     log_path = path.encode('ascii', 'ignore').decode('ascii')
@@ -55,7 +58,7 @@ def try_replace_menu(folder, file, menu, regex):
         try:
             with open(_path, 'r', encoding='utf-8', errors='ignore') as old:
                 with open(path, 'w', encoding='utf-8', errors='ignore') as new:
-                    replace_menu(old, new, menu, regex)
+                    update_file(old, new, menu, menu_regex, latex_regex)
             remove(_path)
             logging.info(f'path: {log_path}, ok')
         except Exception as e:
@@ -66,23 +69,21 @@ def try_replace_menu(folder, file, menu, regex):
         logging.warning(f'path: {log_path}, skipped: {e}')
 
 
-def replace_menu(old: TextIOWrapper, new: TextIOWrapper, menu, regex):
+def update_file(old: TextIOWrapper, new: TextIOWrapper, menu, menu_regex, latex_regex):
+    global latex_script
+    new.write(latex_script)
     new.write(menu)
     text_started = False
     line = old.readline()
 
     while line != '':
-        if not text_started and is_menu(line, regex):
+        if not text_started and match(menu_regex, line) or match(latex_regex, line):
             old.readline()
         else:
             text_started = True
             new.write(line)
 
         line = old.readline()
-
-
-def is_menu(line, regex):
-    return match(regex, line) is not None
 
 
 if __name__ == '__main__': main()
