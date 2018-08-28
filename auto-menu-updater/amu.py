@@ -15,7 +15,7 @@ def main():
     latex_regex = compile(r'<script type="text/x-mathjax-config">')
 
     for folder, file in get_files_paths(dir=args.dir):
-        if file.endswith('.md'):
+        if file.endswith('.md') and file != 'README.md':
             menu = get_menu(folder, file, root=args.name)
             try_update_file(folder, file, menu, menu_regex, latex_regex)
 
@@ -49,7 +49,7 @@ def get_menu(path, file, root):
         folders[-1] = f'[{folders[-1]}](./)'
         folders.append(file[:-3])
     
-    return ' > '.join(folders) + '\n'
+    return ' > '.join(folders) + '\n\n'
 
 
 def try_update_file(folder, file, menu, menu_regex, latex_regex):
