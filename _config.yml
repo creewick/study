@@ -5,8 +5,8 @@ markdown: kramdown
 theme: minima
 
 header_pages:
-  - combalg/
-  - diffur/
-  - inet/
-  - logic/
-  - matan/
+  - combalg/index.html
+  - diffur/index.html
+  - inet/index.html
+  - logic/index.html
+  - matan/index.html
