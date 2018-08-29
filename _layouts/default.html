@@ -6,10 +6,8 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {% if page.toc == true %}
-        <div class="dock-header__toc markdown-body">
           <h3>Содержание:</h3>
           {% include toc.html html=content %}
-        </div>
         {% endif %}
         {{ content }}
       </div>
