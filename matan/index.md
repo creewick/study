@@ -1,6 +1,3 @@
----
-permalink: matan
----
 [home](../) > matan
 
 # Математический Анализ

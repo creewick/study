@@ -3,3 +3,10 @@ title: ФТ-302
 permalink: pretty
 markdown: kramdown
 theme: minima
+
+header_pages:
+  - combalg/
+  - diffur/
+  - inet/
+  - logic/
+  - matan/
