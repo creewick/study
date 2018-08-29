@@ -2,3 +2,6 @@ title: ФТ-302
 
 markdown: kramdown
 theme: minima
+
+kramdown:
+  parse_block_html: true
