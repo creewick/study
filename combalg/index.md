@@ -1,5 +1,5 @@
 ---
-title = Комбинаторные алгоритмы
+permalink: combalg/
 ---
 [home](../) > combalg
 

@@ -1,6 +1,5 @@
 ---
 layout: default
-title: ФТ-302
 ---
 
 ## Расписание

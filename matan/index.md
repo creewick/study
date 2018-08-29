@@ -1,5 +1,5 @@
 ---
-permalink: matan.html
+permalink: matan
 ---
 [home](../) > matan
 

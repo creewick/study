@@ -1,5 +1,5 @@
 ---
-permalink: inet.html
+permalink: inet
 ---
 [home](../) > inet
 
