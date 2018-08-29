@@ -1,10 +1,3 @@
----
-permalink: combalg/
----
-[home](../) > combalg
-
-# Комбинаторные алгоритмы
-
 [Поиск в графе](files/search.pdf)
 
 [Минимальный остов](files/ostov.pdf)

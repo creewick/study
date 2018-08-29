@@ -1,7 +1,3 @@
-[home](../../) > [logic](../) > [0](./) > deduction
-
-# Теорема дедукции
-
 Если $\Gamma \cup \{F\} \vdash G$, то $\Gamma \vdash (F \to G)$
 
 ## Доказательство

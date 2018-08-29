@@ -1,7 +1,3 @@
-[home](../../) > [matan](../) > [set](./) > sup
-
-# Точные границы
-
 $X \sube \R, M \in \R$, $M$ - **точная верхняя граница** (супремум) $X$, если $M$ - наименьшее среди всех верхних границ $X$.
 
 $(\forall x \in X: x \leq M) \and (\forall \epsilon > 0,  \exist x \in X: x > M - \epsilon)$

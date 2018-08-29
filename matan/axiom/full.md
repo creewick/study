@@ -1,7 +1,3 @@
-[home](../../) > [matan](../) > [axiom](./) > full
-
-# Аксиома полноты
-
 $$
 \begin{cases}A \sub \R, A \neq \O \\ B \sub \R, B \neq \O \end{cases}: \forall a \in A, \forall b \in B, a \leq b \Rightarrow \exist c \in \R: \forall a \in A, \forall b \in B, a \leq c \leq b
 $$

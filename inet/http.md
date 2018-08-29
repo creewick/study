@@ -1,7 +1,3 @@
-[home](../) > [inet](./) > http
-
-# Протокол HTTP
-
 **Hyper-Text Transfer Protocol** – протокол передачи гипертекста 
 
 [TOC]

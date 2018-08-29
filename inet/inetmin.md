@@ -1,7 +1,3 @@
-[home](../) > [inet](./) > inetmin
-
-# inetmin
-
 #### [Протокол OSPF](routing.html#header-n124)
 
 * [Виды зон OSPF (+чем отличаются)](../routing/ospf.html#header-n114)
