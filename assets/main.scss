@@ -7,6 +7,11 @@
     border-top: 5px solid $grey-color-dark;
     background-color: white;
     position: fixed;
+    height: 56px;
     top: 0;
     width: 100%;
+}
+
+.page-content {
+    margin-top: 56px;
 }
