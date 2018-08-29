@@ -6,7 +6,6 @@
 .site-header {
     border-top: 5px solid #3050a0;
     background-color: white;
-    white-space: nowrap;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,16 +16,15 @@
 }
 
 .site-nav {
-    display: inline-block;
-    margin-left: 20px;
     float: none;
+    overflow: hidden;
 }
 
 .site-title {
     display: inline-block;
+    margin-right: 20px;
 }
 
 .header-menu {
-    overflow: hidden;
     direction: rtl;
 }
