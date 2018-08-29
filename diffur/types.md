@@ -133,7 +133,7 @@ $$
 
 $dF(x, y) = M(x, y) dx + N (x, y) dy \ \ \ (1)$
 
-Условие эквиваленто выражению $\large \frac{\part M}{\part y} \equiv \frac{\part N}{\part x} \ \ \ (2)$
+Условие эквиваленто выражению $\large \frac{\partial M}{\partial y} \equiv \frac{\partial N}{\partial x} \ \ \ (2)$
 
 1. Проверяем, что условие (2) выполняется
 
