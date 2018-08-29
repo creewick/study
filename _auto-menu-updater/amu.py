@@ -7,8 +7,6 @@ import logging
 
 
 def main():
-    global latex_script
-    latex_script = """<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});</script><script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>\n"""
     logging.basicConfig(filename='log')
     args = get_args()
     menu_regex = compile(r'(\[.*?\]\((..\/)*\) > |{args.name})')
@@ -73,8 +71,6 @@ def try_update_file(folder, file, menu, menu_regex, latex_regex):
 
 
 def update_file(old: TextIOWrapper, new: TextIOWrapper, menu, menu_regex, latex_regex):
-    global latex_script
-    new.write(latex_script)
     new.write(menu)
     text_started = False
     line = old.readline()
