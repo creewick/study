@@ -6,13 +6,9 @@
 .site-header {
     border-top: 5px solid #3050a0;
     background-color: white;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
-}
-
-.page-content {
-    margin-top: 48px;
 }
 
 .site-nav {
