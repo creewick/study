@@ -6,6 +6,7 @@
 .site-header {
     border-top: 5px solid #3050a0;
     background-color: white;
+    white-space: nowrap;
     position: fixed;
     height: 56px;
     top: 0;
@@ -26,7 +27,6 @@
     display: inline-block;
 }
 
-.wrapper {
-    white-space: nowrap;
+.header-row {
     overflow-x: hidden;
 }
