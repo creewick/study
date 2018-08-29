@@ -1,5 +1,5 @@
 ---
-title: КомбАлг
+title: Комбалг
 ---
 
 [Поиск в графе](files/search.pdf)
