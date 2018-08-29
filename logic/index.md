@@ -1,3 +1,6 @@
+---
+permalink: logic.html
+---
 [home](../) > logic
 
 # Математическая Логика
