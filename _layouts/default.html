@@ -5,7 +5,12 @@
     {%- include header.html -%}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {% include toc.html html=content %}
+        {% if page.toc != false and site.render_toc_on_docs_layout != false%}
+        <div class="dock-header__toc markdown-body">
+          <h3>Table of contents:</h3>
+          {% include toc.html html=content %}
+        </div>
+        {% endif %}
         {{ content }}
       </div>
     </main>
