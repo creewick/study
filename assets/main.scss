@@ -20,6 +20,7 @@
 .site-nav {
     display: inline-block;
     margin-left: 20px;
+    overflow: hidden;
     float: none;
 }
 
@@ -27,6 +28,8 @@
     display: inline-block;
 }
 
-.header-row {
-    overflow-x: hidden;
+.wrapper {
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
 }
