@@ -1,6 +1,3 @@
----
-permalink: diffur.html
----
 [home](../) > diffur
 
 # Дифференциальные уравнения
