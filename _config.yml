@@ -9,3 +9,10 @@ header_pages:
   - inet/index.md
   - logic/index.md
   - matan/index.md
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
