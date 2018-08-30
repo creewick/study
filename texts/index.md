@@ -20,7 +20,10 @@ title: Все курсы
 * [Компьютерные сети](https://www.asozykin.ru/courses/networks)
 * Операционные системы
 * [Протоколы Интернет](inet/)
-	 С++		[C#](https://ulearn.me)		[JS](js.pdf)		[python](https://www.youtube.com/channel/UClQJvX1TXm0rXoxFtTczNog/playlists)
+   С++
+* [C#](https://ulearn.me)
+* [JS](js.pdf)
+* [python](https://www.youtube.com/channel/UClQJvX1TXm0rXoxFtTczNog/playlists)
 
 ### Гуманитарные
 
