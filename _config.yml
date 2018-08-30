@@ -6,6 +6,7 @@ theme: minima
 header_pages:
   - index.md
   - texts/index.md
+  - about.md
 
 defaults:
   -

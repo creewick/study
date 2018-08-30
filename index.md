@@ -1,5 +1,4 @@
 ---
-layout: default
 menu_title: Главная
 title: Расписание
 ---
