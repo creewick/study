@@ -4,11 +4,8 @@ markdown: kramdown
 theme: minima
 
 header_pages:
-  - combalg/index.md
-  - diffur/index.md
-  - inet/index.md
-  - logic/index.md
-  - matan/index.md
+  - index.md
+  - lectures.md
 
 defaults:
   -
