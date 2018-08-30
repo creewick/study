@@ -3,10 +3,6 @@ title: ФТ-302
 markdown: kramdown
 theme: minima
 
-header_pages:
-  - index.md
-  - texts/index.md
-
 defaults:
   -
     scope:
