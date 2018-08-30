@@ -1,6 +1,5 @@
 ---
 layout: default
-title: ""
 ---
 
 ## Расписание
@@ -11,7 +10,13 @@ title: ""
 
 ## Лекции
 
-### 2 курс
+### Пройденные курсы
+
+#### Математические
+
+[Алгебра и геометрия](algem/)
+
+[Дискретная математика](diskret/)
 
 [Дифференциальные уравнения](diffur/)
 
@@ -21,9 +26,17 @@ title: ""
 
 [Математическая логика](logic)
 
+Теория автоматов
+
+#### IT-курсы
+
 [Протоколы Интернет](inet/)
 
-[C#](https://ulearn.me)
+С++		[C#](https://ulearn.me)		[python](https://www.youtube.com/channel/UClQJvX1TXm0rXoxFtTczNog/playlists)
+
+#### Гуманитарные
+
+[Правоведение](https://docs.google.com/document/d/1jV1fqRsaz7bbDc882UzEfLF8AZTGTC0LLIiUIOA10bQ/edit)
 
 -----
 
