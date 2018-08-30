@@ -1,0 +1,27 @@
+---
+---
+
+@import "minima";
+
+.site-header {
+    border-top: 5px solid #3050a0;
+    background-color: white;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+
+.site-nav {
+    float: none;
+    overflow: hidden;
+}
+
+.site-title {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-menu {
+    direction: rtl;
+}
