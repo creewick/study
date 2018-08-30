@@ -1,3 +1,7 @@
+---
+title: Вопросы inetmin
+---
+
 #### [Протокол OSPF](routing.html#header-n124)
 
 * [Виды зон OSPF (+чем отличаются)](../routing/ospf.html#header-n114)
@@ -21,72 +25,72 @@
 
 #### [Типы записей DNS (+формат значений)](../dns/conf)
 
-​	 *SOA, NS, A, CNAME, MX, PTR, DS, DNSKEY, RRSIG, SPF*
+	 *SOA, NS, A, CNAME, MX, PTR, DS, DNSKEY, RRSIG, SPF*
 
 #### Команды протокола SMTP (+синтаксис и что делают)
 
-​	 *HELP, HELO, EHLO, MAIL, RCPT, DATA, RSET, QUIT*
+	 *HELP, HELO, EHLO, MAIL, RCPT, DATA, RSET, QUIT*
 
 #### Команды протокола POP3 (+синтаксис и что делают)
 
-​	 *USER, PASS, STAT, LIST, UIDL, TOP, RETR, DELE, RSET, QUIT*
+	 *USER, PASS, STAT, LIST, UIDL, TOP, RETR, DELE, RSET, QUIT*
 
 #### Команды протокола FTP (+синтаксис и что делают)
 
-​	 *HELP, USER, PASS, SYST, STAT, TYPE, SWD, LIST, PASV, PORT, RETR, STOR, DELE, QUIT*
+	 *HELP, USER, PASS, SYST, STAT, TYPE, SWD, LIST, PASV, PORT, RETR, STOR, DELE, QUIT*
 
 #### Заголовки писем (+формат значений)
 
-​	 *Return-Path, Received, From, Reply-To, To, CC, BCC, Message-Id, Subject, MIME-Version, Content-Transfer-Encoding, Content-Type, Content-Type: multipart/\*, DKIM*
+	 *Return-Path, Received, From, Reply-To, To, CC, BCC, Message-Id, Subject, MIME-Version, Content-Transfer-Encoding, Content-Type, Content-Type: multipart/\*, DKIM*
 
 #### Методы HTTP (+назначение и формат пакетов)
 
-​	 *GET, HEAD, POST, OPTIONS, TRACE*
+	 *GET, HEAD, POST, OPTIONS, TRACE*
 
 #### HTTP заголовки общие (+формат значений)
 
-​	 *Cache-Control, Connection, Date, Trailer, Transfer-Encoding, Upgrade, Via*
+	 *Cache-Control, Connection, Date, Trailer, Transfer-Encoding, Upgrade, Via*
 
 #### HTTP заголовки клиента (+формат значений)
 
-​	 *Accept, Accept-Charset, Accept-Encoding, Accept-Language, Authorization, Expect, Host, Cookie, If-Match, If-Non-Match, If-Modified-Since, If-Unmodified-Since, If-Range, Max-Range, Proxy-Authorization, Range, Referer, User-Agent*
+	 *Accept, Accept-Charset, Accept-Encoding, Accept-Language, Authorization, Expect, Host, Cookie, If-Match, If-Non-Match, If-Modified-Since, If-Unmodified-Since, If-Range, Max-Range, Proxy-Authorization, Range, Referer, User-Agent*
 
 #### HTTP заголовки сервера (+формат значений)
 
-​	 *Accept-Ranges, Age, Location, Proxy-Authenticate, Public, Refresh, Server, Set-Cookie, Vary, Warning, WWW-Authenticate*
+	 *Accept-Ranges, Age, Location, Proxy-Authenticate, Public, Refresh, Server, Set-Cookie, Vary, Warning, WWW-Authenticate*
 
 #### HTTP заголовки сущности (+формат значений)
 
-​	 *Allow, Content-Encoding, Content-Language, Content-Length, Content-Location, Content-MD5, Content-Range, Content-Type, ETag, Expires, Last-Modified*
+	 *Allow, Content-Encoding, Content-Language, Content-Length, Content-Location, Content-MD5, Content-Range, Content-Type, ETag, Expires, Last-Modified*
 
 #### Коды ответов HTTP-сервера (+формат пакетов)
 
-​	 *100 Continue*
+	 *100 Continue*
 
-​	 *101 Switching Protocols*
+	 *101 Switching Protocols*
 
-​	 *200 OK*
+	 *200 OK*
 
-​	 *204 No Content*
+	 *204 No Content*
 
-​	 *206 Partial Content*
+	 *206 Partial Content*
 
-​	 *301 Moved Permanently*
+	 *301 Moved Permanently*
 
-​	 *302 Found*
+	 *302 Found*
 
-​	 *304 Not Modified*
+	 *304 Not Modified*
 
-​	 *400 Bad Request*
+	 *400 Bad Request*
 
-​	 *403 Forbidden*
+	 *403 Forbidden*
 
-​	 *404 Not Found*
+	 *404 Not Found*
 
-​	 *413 Request Entity Too Large*
+	 *413 Request Entity Too Large*
 
-​	 *417 Expectation Failed*
+	 *417 Expectation Failed*
 
-​	 *500 Internal Server Error*
+	 *500 Internal Server Error*
 
-​	 *503 Service Unavailable*
+	 *503 Service Unavailable*

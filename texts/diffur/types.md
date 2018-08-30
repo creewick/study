@@ -117,9 +117,13 @@ $$
 
     Подставляем в ур-ие:
 
-    $\large\frac{dz}{dx} + \frac{dy_1}{dx} = P z^2 + 2 P y_1 z + P y_1^2 + Q z + Q y_1 + R$
+    $$
+    \frac{dz}{dx} + \frac{dy_1}{dx} = P z^2 + 2 P y_1 z + \\ + P y_1^2 + Q z + Q y_1 + R
+    $$
 
-    $\large\frac{dz}{dx} = (2 P y_1 + Q) z + P z^2$
+    $$
+    \frac{dz}{dx} = (2 P y_1 + Q) z + P z^2
+    $$
 
     Решаем как ур-ие Бернулли с $n = 2$
 
@@ -137,7 +141,7 @@ $dF(x, y) = M(x, y) dx + N (x, y) dy \ \ \ (1)$
 
 1. Проверяем, что условие (2) выполняется
 
-2. Тогда, $M(x, y)dx + N(x, y)dy \equiv F'_x dx +F_y dy$; 
+2. Тогда, $M(x, y)dx + N(x, y)dy \equiv F'_x dx +F_y dy$
 
    из  $M(x, y) = F'_x dx$ находим $F(x, y) = \int M(x,y) dx$
 
