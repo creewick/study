@@ -5,7 +5,7 @@ theme: minima
 
 header_pages:
   - index.md
-  - lectures.md
+  - texts.md
 
 defaults:
   -
