@@ -5,6 +5,7 @@ theme: minima
 
 header_pages:
   - index.md
+  - calendar.md
   - texts/index.md
   - about.md
 
