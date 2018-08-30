@@ -10,7 +10,7 @@ title: Пройденные курсы
 * [Дифференциальные уравнения](diffur/)
 * [Комбинаторные алгоритмы](combalg/)
 * [Математический анализ](matan)
-* [Математическая логика](logic) [(+Logic4Humans)](https://github.com/Denchick/logic4humans)
+* [Математическая логика](logic)
 * Теория автоматов
 
 ### IT-курсы
@@ -19,7 +19,7 @@ title: Пройденные курсы
 * [Компьютерные сети](https://www.asozykin.ru/courses/networks)
 * Операционные системы
 * [Протоколы Интернет](inet/)
-   С++
+* С++
 * [C#](https://ulearn.me)
 * [JS](js.pdf)
 * [python](https://www.youtube.com/channel/UClQJvX1TXm0rXoxFtTczNog/playlists)

@@ -26,4 +26,9 @@ title: Математическая логика
 
 ------
 
-[Билеты](exam)
+	[Билеты](exam)
+
+-----
+
+	[Ещё конспекты](https://Denchick.github.com/logic4humans)
+
