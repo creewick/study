@@ -5,7 +5,7 @@ theme: minima
 
 header_pages:
   - index.md
-  - texts.md
+  - texts/index.md
 
 defaults:
   -
