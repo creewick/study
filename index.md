@@ -1,5 +1,5 @@
 ---
-menu_title: "     "
+menu_title: ""
 title: ""
 ---
 # Новости
