@@ -7,6 +7,7 @@ header_pages:
   - index.md
   - news.md
   - calendar.md
+  - tasks/index.md
   - texts/index.md
   - about.md
 
