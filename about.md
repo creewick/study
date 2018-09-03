@@ -1,5 +1,5 @@
 ---
-menu_title: Команда
+menu_title: О нас
 title: О команде
 ---
 
