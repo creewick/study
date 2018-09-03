@@ -4,11 +4,12 @@ markdown: kramdown
 theme: minima
 
 header_pages:
-  - index.md
   - news.md
   - calendar.md
-  - texts/terver/index.md
+  - tasks/index.md
   - about.md
+  - texts/terver/index.md
+  - texts/index.md
 
 defaults:
   -
