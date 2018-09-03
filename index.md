@@ -1,5 +1,5 @@
 ---
-menu_title: Главная
+menu_title: "     "
 title: ""
 ---
 # Новости
