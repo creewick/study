@@ -29,4 +29,4 @@ title: ""
 
 # Практики
 
-[Тервер. Первая неделя](courses/terver/practice/1)
+[Тервер. Первая неделя](courses/terver/practice/1)	
