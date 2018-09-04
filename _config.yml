@@ -9,6 +9,7 @@ header_pages:
   - calendar.md
   - about.md
   - a.md
+  - courses/web/index.md
   - courses/assembler/index.md
   - courses/terver/index.md
   - courses/index.md
