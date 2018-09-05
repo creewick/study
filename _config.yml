@@ -4,8 +4,6 @@ markdown: kramdown
 theme: minima
 
 header_pages:
-  - index.md
-  - news.md
   - calendar.md
   - about.md
   - a.md
