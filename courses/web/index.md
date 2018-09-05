@@ -3,7 +3,7 @@ menu_title: Web
 title: Web
 ---
 
-## Практика
+## Практики
 
 Елькин Евгений Сергеевич
 
@@ -14,3 +14,10 @@ evgeny.elkin@urfu.ru
 ---
 
 [HTMLbook](htmlbook.ru/)
+
+## Лекции
+
+Солодушкин Святослав Игоревич
+
+[Сайт](http://solod.zz.mu/edu/web/)
+
