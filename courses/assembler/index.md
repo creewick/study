@@ -1,6 +1,6 @@
 ---
 title: Ассемблер
-menu_title: Ассемблер
+menu_title: .asm
 ---
 
 ## Лекции
