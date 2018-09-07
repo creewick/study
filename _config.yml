@@ -3,18 +3,6 @@ title: ФТ-302
 markdown: kramdown
 theme: minima
 
-header_pages:
-  - courses/index.md
-  - calendar.md
-  - about.md
-  - a.md
-  - courses/alg/index.md
-  - courses/assembler/index.md
-  - courses/web/index.md
-  - courses/combalg/index.md
-  - courses/terver/index.md
-  - courses/funcan/index.md
-
 defaults:
   -
     scope:
