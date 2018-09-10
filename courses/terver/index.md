@@ -9,7 +9,9 @@ menu_title: ТВ
 
 ---
 
-[Первая неделя](practice/1)
+[Первая неделя](practice/1_solved) ([Задачи](practice/1))
+
+[Вторая неделя](practice/2_solved) ([Задачи](practice/2))
 
 
 

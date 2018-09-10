@@ -39,4 +39,6 @@ title: ""
 
 # Практики
 
-[Тервер. Первая неделя](courses/terver/practice/1)
+[Тервер. Вторая неделя](courses/terver/practice/2_solved) ([Задачи](courses/terver/practice/2))
+
+[Тервер. Первая неделя](courses/terver/practice/1_solved) ([Задачи](courses/terver/practice/1))
