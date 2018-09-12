@@ -19,7 +19,19 @@
 
 .site-title {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
+}
+
+.site-nav .page-link:not(:last-child) {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .site-nav .page-link {
+        padding: 0 10px 0 10px;
+        display: inline-block;
+        line-height: unset;
+    }
 }
 
 hr {
