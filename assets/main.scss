@@ -35,6 +35,11 @@
         text-decoration: none;
     }
 
+    .site-nav .separator {
+        border-right: 2px solid lightgray;
+        flex: 0;
+    }
+
     .site-nav .page-link {
         flex: auto;
         text-align: center;
