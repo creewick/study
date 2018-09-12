@@ -11,8 +11,9 @@ title: ""
 
 * [Запись на ассемблер](https://docs.google.com/spreadsheets/d/1-v05ehxSsSPDd7rUK6OVbm4WoPRrKw30sjfyKk-YUy8/edit?usp=sharing)
 
-* Обновили [страничку о спецкурсах](courses/spec/)
+---
 
+* Обновили [страничку о спецкурсах](courses/spec/)
 * Добавили важные файлики по [терверу](courses/terver)
 
 
