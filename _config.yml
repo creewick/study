@@ -4,10 +4,10 @@ markdown: kramdown
 theme: minima
 
 header_pages:
-  - courses/alg/index.md
   - courses/assembler/index.md
   - courses/web/index.md
   - courses/combalg/index.md
+  - courses/alg/index.md
   - courses/terver/index.md
   - courses/funcan/index.md
 
