@@ -5,13 +5,25 @@ menu_title: ТВ
 
 ## Практика
 
-Семен Стихин (@samstikhin),  Николай Пермяков (@Envoy_of_Darkness), Александр Муллабаев (@Programmer007) и Антон Липин (@antonlipin). 
+[Семен Стихин](https://t.me/samstikhin)
+
+[Николай Пермяков](https://t.me/Envoy_of_Darkness)
+
+[Александр Муллабаев](https://t.me/Programmer007)
+
+[Антон Липин](https://t.me/antonlipin)
 
 ---
 
+[Вторая неделя](practice/2_solved) ([Задачи](practice/2))
+
 [Первая неделя](practice/1_solved) ([Задачи](practice/1))
 
-[Вторая неделя](practice/2_solved) ([Задачи](practice/2))
+---
+
+**Почта для задач:** mathmechterver@gmail.com
+
+[Регламент курса](https://docs.google.com/document/d/11hwt5iI8w8OMd6HvdSK6FvEmuNv0xnQ3ynRbrenP8DI/edit)
 
 
 
@@ -29,13 +41,25 @@ menu_title: ТВ
 
 ## Лекции
 
-Хлопин Дмитрий Валерьевич
+**Лектор:** Хлопин Дмитрий Валерьевич glukanat@mail.ru
 
-glukanat@mail.ru
+**Судья:** Никишина Маргарита margaritanikishina98@gmail.com
 
 ---
 
-[Первая лекция](lectures/1)
+[Конспект 1](lectures/1)
+
+### Презентации:
+
+[Вторая пара](files/лекция2.pdf)
+
+[Первая пара](files/лекция1.pdf)
+
+---
+
+[Конспекты 1 семестр](files/конспект1.pdf)
+
+[Задачи по теории](files/teor_problems.pdf)
 
 
 
