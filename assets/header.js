@@ -1,6 +1,6 @@
 var links = document.getElementsByClassName("page-link");
 
-links.forEach(element => {
-    if (document.URL.indexOf(element.href) > -1)
+for (var i = 0; i < links.length; i++) {
+    if (document.URL.indexOf(links[i].href) > -1)
         element.className += ' selected';
-});
+};
