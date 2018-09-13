@@ -19,7 +19,7 @@
               <a class="page-link default" href="/study/courses/">Все курсы</a>
               <a class="page-link default" href="/study/calendar">Календарь</a>
               <a class="page-link default" href="/study/news">Новости</a>
-              <a class="page-link default" href="/study/about">О нас</a>
+              <a class="page-link default last" href="/study/about">О нас</a>
               <a class="page-link separator"></a>
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
