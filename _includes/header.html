@@ -17,9 +17,9 @@
   
           <div class="trigger">
               <a class="page-link" href="/study/courses/">Все курсы</a>
-              <a class="page-link" href="/study/calendar.html">Календарь</a>
-              <a class="page-link" href="/study/news.html">Новости</a>
-              <a class="page-link" href="/study/about.html">О нас</a>
+              <a class="page-link" href="/study/calendar">Календарь</a>
+              <a class="page-link" href="/study/news">Новости</a>
+              <a class="page-link" href="/study/about">О нас</a>
               <a class="page-link separator"></a>
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
@@ -32,3 +32,4 @@
       {%- endif -%}
     </div>
   </header>
+  <script src="../assets/header.js"></script>

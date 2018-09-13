@@ -30,7 +30,8 @@
     .site-nav > .trigger { display: flex; }
     
     .site-nav .page-link:not(.separator):hover,
-    .site-title:hover {
+    .site-title:hover,
+    .site-nav .selected {
         border-bottom: 2px solid #3050a0;
         box-sizing: border-box;
         text-decoration: none;
