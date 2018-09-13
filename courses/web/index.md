@@ -13,7 +13,7 @@ evgeny.elkin@urfu.ru
 
 ---
 
-[HTMLbook](htmlbook.ru/)
+[HTMLbook](http://htmlbook.ru/)
 
 ## Лекции
 
