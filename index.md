@@ -36,7 +36,7 @@ title: ""
 
 - [Ассемблер](assembler)
 - [Web](web)
-- Матроиды и графы
+- [Матроиды и графы](courses/graphs)
 - [Функциональный анализ](courses/funcan)
 
 [Пройденные курсы](courses/)
