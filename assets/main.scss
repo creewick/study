@@ -31,7 +31,8 @@
     
     .site-nav .page-link:not(.separator):hover,
     .site-title:hover,
-    .site-nav .selected {
+    .site-nav .page-link.selected,
+    .site-title.selected {
         border-bottom: 2px solid #3050a0;
         box-sizing: border-box;
         text-decoration: none;
