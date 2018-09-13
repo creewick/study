@@ -40,16 +40,13 @@
 
     .site-nav .page-link.separator {
         border-right: 1px solid lightgray;
+        margin-left: 10px;
         flex: 0;
     }
 
     .site-nav .page-link.default {
-        flex: 0;
         padding: 0 5px 0 5px;
-    }
-
-    .site-nav .page-link.default.last {
-        padding-right: 10px;
+        flex: 0;
     }
 
     .site-nav .page-link {
