@@ -45,7 +45,8 @@
     }
 
     .site-nav .page-link.default {
-        padding: 0 5px 0 5px;
+        padding-left: calc(5% - 25px);
+        padding-right: calc(5% - 25px);
         flex: 0;
     }
 
