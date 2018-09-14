@@ -7,6 +7,8 @@ menu_title: ТА
 
 Дмитрий Косолобов dkosolobov@mail.ru
 
+---
+
 [Первая пара](practice/1)
 
 ## Лекции

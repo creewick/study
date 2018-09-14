@@ -25,7 +25,7 @@ menu_title: ТВ
 
 [Регламент курса](https://docs.google.com/document/d/11hwt5iI8w8OMd6HvdSK6FvEmuNv0xnQ3ynRbrenP8DI/edit)
 
-
+---
 
 Домашняя работа: 30 б.
 
@@ -61,7 +61,7 @@ menu_title: ТВ
 
 [Задачи по теории](files/teor_problems.pdf)
 
-
+---
 
 Баллы за:
 

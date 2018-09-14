@@ -5,9 +5,7 @@ menu_title: .asm
 
 ## Лекции
 
-Сибиряков Александр Евгеньевич
-
-a.sibiryakov@urfu.ru
+Сибиряков Александр Евгеньевич a.sibiryakov@urfu.ru
 
 ---
 

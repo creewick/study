@@ -14,8 +14,7 @@ title: ""
 ---
 
 * Обновили [страничку о спецкурсах](courses/spec/)
-* Добавили важные файлики по [терверу](courses/terver)
-* Отзывы о сайте оставляйте [в телеграме](https://t.me/creewick)
+* Баг-репорты и предложения принимаются [в телеграме](https://t.me/creewick)
 
 
 # Расписание
@@ -32,17 +31,11 @@ title: ""
 
 ### По выбору
 
-[Выбор спецкурсов](courses/spec)
+**[Выбор спецкурсов](courses/spec)**
 
 - [Ассемблер](assembler)
 - [Web](web)
 - [Матроиды и графы](courses/graphs)
 - [Функциональный анализ](courses/funcan)
 
-[Пройденные курсы](courses/)
-
-# Практики
-
-[Тервер. Вторая неделя](courses/terver/practice/2_solved) ([Задачи](courses/terver/practice/2))
-
-[Тервер. Первая неделя](courses/terver/practice/1_solved) ([Задачи](courses/terver/practice/1))
+**[Пройденные курсы](courses/)**
