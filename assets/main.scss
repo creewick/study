@@ -27,14 +27,6 @@
 @media screen and (min-width: 601px) {
     .site-nav > .trigger { display: flex; }
     .site-nav .page-link.subject { display: none; }
-
-    .site-nav .page-link:not(.separator):hover,
-    .site-title:hover,
-    .site-nav .page-link.selected,
-    .site-title.selected {
-        box-sizing: border-box;
-        text-decoration: none;
-    }
     
     .site-nav .page-link {
         border-bottom: 2px solid white;
@@ -42,6 +34,14 @@
         text-align: center;
         display: inline-block;
         line-height: unset;
+    }
+
+    .site-nav .page-link:not(.separator):hover,
+    .site-title:hover,
+    .site-nav .page-link.selected,
+    .site-title.selected {
+        box-sizing: border-box;
+        text-decoration: none;
     }
 }
 
