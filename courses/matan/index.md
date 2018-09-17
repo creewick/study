@@ -14,7 +14,7 @@ title: Математический анализ
 
 [Сканы тетради #2](https://drive.google.com/drive/folders/0B-tJEFZy15g8S2E0Um03MXZPZlU)
 
-
+[Сканы тетради #3](https://drive.google.com/drive/folders/0B7_YxGnIH66-cWxmVDh3bnlmcWM)
 
 ---
 
