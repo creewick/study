@@ -5,13 +5,7 @@ menu_title: Тервер
 
 ## Практика
 
-[Семен Стихин](https://t.me/samstikhin)
-
-[Николай Пермяков](https://t.me/Envoy_of_Darkness)
-
-[Александр Муллабаев](https://t.me/Programmer007)
-
-[Антон Липин](https://t.me/antonlipin)
+[Семен Стихин](https://t.me/samstikhin)	[Николай Пермяков](https://t.me/Envoy_of_Darkness)	[Александр Муллабаев](https://t.me/Programmer007)	[Антон Липин](https://t.me/antonlipin)
 
 ---
 
