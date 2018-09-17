@@ -32,12 +32,12 @@
     .site-title:hover,
     .site-nav .page-link.selected,
     .site-title.selected {
-        border-bottom: 2px solid #3050a0;
         box-sizing: border-box;
         text-decoration: none;
     }
-
+    
     .site-nav .page-link {
+        border-bottom: 2px solid white;
         flex: auto;
         text-align: center;
         display: inline-block;
@@ -47,6 +47,10 @@
 
 .page-content {
     padding: 0 0 30px 0;
+}
+
+.page-content .site-nav {
+    border-bottom: 1px solid #e8e8e8;
 }
 
 hr {
