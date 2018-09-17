@@ -13,7 +13,6 @@
 
 .site-nav {
     float: none;
-    overflow: hidden;
     white-space: nowrap;
 }
 
@@ -22,13 +21,13 @@
     margin-right: 5px;
 }
 
-.site-nav .page-link:not(:last-child) {
-    margin-right: 0;
-}
+.site-nav .page-link:not(:last-child) { margin-right: 0; }
+
 
 @media screen and (min-width: 601px) {
     .site-nav > .trigger { display: flex; }
-    
+    .site-nav .page-link.subject { display: none; }
+
     .site-nav .page-link:not(.separator):hover,
     .site-title:hover,
     .site-nav .page-link.selected,
@@ -36,18 +35,6 @@
         border-bottom: 2px solid #3050a0;
         box-sizing: border-box;
         text-decoration: none;
-    }
-
-    .site-nav .page-link.separator {
-        border-right: 1px solid lightgray;
-        margin-left: 5px;
-        flex: 0;
-    }
-
-    .site-nav .page-link.default {
-        padding-left: calc(5% - 25px);
-        padding-right: calc(5% - 25px);
-        flex: 0;
     }
 
     .site-nav .page-link {
