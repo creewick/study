@@ -6,10 +6,11 @@
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       {%- if page_paths -%}
         <div class="menu top-menu"> 
-          <a class="page-link default" href="/study/courses/">Все курсы</a>
-          <a class="page-link default" href="/study/calendar">Календарь</a>
-          <a class="page-link default" href="/study/news">Новости</a>
-          <a class="page-link default" href="/study/about">О нас</a>
+          <a class="page-link" href="/study/courses/">Все курсы</a>
+          <a class="page-link" href="/study/courses/spec/">Спецкурсы</a>
+          <a class="page-link" href="/study/calendar">Календарь</a>
+          <a class="page-link" href="/study/news">Новости</a>
+          <a class="page-link" href="/study/about">О нас</a>
         </div>
       {%- endif -%}
     </div>
