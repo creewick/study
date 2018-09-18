@@ -45,7 +45,17 @@
         line-height: unset;
     }
     .site-title { padding: 0 calc(7%); }
+
+    .scroll-hide {
+        transition: top 0.3s;
+        position: sticky;
+        width: 100%;
+        background: white;
+        top: 62px;
+    }
 }
+
+.scroll-hide { display: none; }
 
 .page-content {
     padding: 0 0 30px 0;
