@@ -4,14 +4,14 @@
   <body>
     {%- include header.html -%}
     <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50184361 = new Ya.Metrika2({ id:50184361, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50184361" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-    <nav class="menu wrapper scroll-hide"> 
+    <div class="menu wrapper scroll-hide"> 
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.menu_title -%}
         <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.menu_title | escape }}</a>
         {%- endif -%}
       {%- endfor -%}
-    </nav>
+    </div>
     <script src="/study/assets/header.js"></script>
     <script src="/study/assets/scroll-hide.js"></script>
     <main class="page-content" aria-label="Content">
