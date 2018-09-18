@@ -27,8 +27,12 @@
     padding: 0 calc(15% - 60px); 
 }
 
-.menu .page-link {
+.menu .page-link,
+.site-title {
     border-bottom: 2px solid transparent;
+}
+
+.menu .page-link {
     color: black;
     flex: auto;
     text-align: center;
