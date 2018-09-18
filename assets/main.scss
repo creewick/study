@@ -23,24 +23,7 @@
 
 .site-nav .page-link:not(:last-child) { margin-right: 0; }
 
-.scroll-hide {
-    border-bottom: 1px solid #e8e8e8;
-    padding: 0;
-    display: flex;
-    transition: top 0.3s;
-    position: sticky;
-    width: 100%;
-    background: #fdfdfd;
-    top: 62px;
-}
-
-.site-nav .page-link {
-    border-bottom: 2px solid transparent;
-    flex: auto;
-    text-align: center;
-    display: inline-block;
-    line-height: unset;
-}
+.scroll-hide { display: none; }
 
 @media screen and (min-width: 601px) {
     .site-nav > .trigger { display: flex; }
@@ -55,7 +38,24 @@
         text-decoration: none;
     }
 
+    .site-nav .page-link {
+        border-bottom: 2px solid transparent;
+        flex: auto;
+        text-align: center;
+        display: inline-block;
+        line-height: unset;
+    }
     .site-title { padding: 0 calc(7%); }
+
+    .scroll-hide {
+        border-bottom: 1px solid #e8e8e8;
+        display: flex;
+        transition: top 0.3s;
+        position: sticky;
+        width: 100%;
+        background: #fdfdfd;
+        top: 62px;
+    }
 }
 
 .page-content {
