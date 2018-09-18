@@ -17,13 +17,13 @@
     display: flex;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .menu.top-menu { display: none; }
 }
 
 .site-title {
     display: inline-block;
-    padding: 0 calc(5%); 
+    padding: 0 calc(15% - 60px); 
 }
 
 .menu .page-link {
@@ -47,6 +47,7 @@
 }
     
 .site-title:hover,
+.menu .page-link:hover,
 .menu .page-link.selected,
 .site-title.selected {
     border-bottom: 2px solid #3050a0;
