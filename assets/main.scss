@@ -17,6 +17,10 @@
     display: flex;
 }
 
+.menu::-webkit-scrollbar { 
+    display: none; 
+}
+
 @media screen and (max-width: 500px) {
     .menu.top-menu { display: none; }
 }
@@ -31,7 +35,7 @@
     color: black;
     flex: auto;
     text-align: center;
-    line-height: 52px;
+    line-height: 54px;
     padding: 0 10px;
 }
 
