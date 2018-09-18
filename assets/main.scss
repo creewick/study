@@ -47,6 +47,7 @@
     .site-title { padding: 0 calc(7%); }
 
     .scroll-hide {
+        display: flex;
         transition: top 0.3s;
         position: sticky;
         width: 100%;
