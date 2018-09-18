@@ -7,4 +7,4 @@ window.onscroll = function() {
     document.getElementsByClassName("scroll-hide")[0].style.top = "8px";
   }
   prevScrollpos = currentScrollPos;
-} 
+}
