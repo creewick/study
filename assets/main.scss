@@ -21,12 +21,9 @@
     display: none; 
 }
 
-@media screen and (max-width: 500px) {
-    .menu.top-menu { display: none; }
-}
-
 .site-title {
     display: inline-block;
+    margin-right: 10px;
     padding: 0 calc(15% - 60px); 
 }
 
