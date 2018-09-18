@@ -10,5 +10,7 @@ menu_title: .asm
 ---
 
 [Первая лекция](lectures/1)
+
 [Вторая лекция](lectures/2)
+
 [Третья лекция](lectures/3)
