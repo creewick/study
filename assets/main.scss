@@ -13,6 +13,7 @@
 
 .menu { 
     white-space: nowrap; 
+    -ms-overflow-style: none;
     overflow-x: auto;
     display: flex;
 }
