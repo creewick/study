@@ -19,3 +19,15 @@ title: Web
 
 [Сайт](http://solod.zz.mu/edu/web/)
 
+
+
+[Первая лекция](lectures\1)
+
+
+
+[Вторая лекция](lectures\2)
+
+
+
+[Третья лекция лекция](lectures\3)
+
