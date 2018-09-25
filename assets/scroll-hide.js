@@ -8,8 +8,8 @@ window.onscroll = function() {
 
   } else {
     document.getElementsByClassName("scroll-hide")[0].style.top = "8px";
-    document.getElementsByClassName("scroll-hide")[0].style.backgroundColor = white;
-    document.getElementsByClassName("site-header")[0].style.backgroundColor = white;
+    document.getElementsByClassName("scroll-hide")[0].style.backgroundColor = "white";
+    document.getElementsByClassName("site-header")[0].style.backgroundColor = "white";
   }
   prevScrollpos = currentScrollPos;
 } 
