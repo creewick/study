@@ -6,6 +6,7 @@
 .site-header {
     border-top: 5px solid #3050a0;
     background-color: white;
+    transition: background-color 0.3s;
     position: sticky;
     z-index: 2;
     top: 0;
@@ -50,6 +51,7 @@
     padding: 0;
     display: flex;
     transition: top 0.3s;
+    transition: background-color 0.3s;
     position: sticky;
     width: 100%;
     background: #fdfdfd;
