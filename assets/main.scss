@@ -45,6 +45,10 @@
     padding: 0 20px;
 }
 
+.scroll-hide .page-link {
+    transition: all 0.2s;
+}
+
 .scroll-hide {
     z-index: 1;
     border-bottom: 1px solid #e8e8e8;
@@ -53,7 +57,7 @@
     transition: all 0.3s;
     position: sticky;
     width: 100%;
-    background: #e8e8e8;
+    background: #fdfdfd;
     top: 62px;
 }
     
