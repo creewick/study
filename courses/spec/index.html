@@ -222,6 +222,11 @@
             }
         }
 
+        var calc = document.getElementById("calc");
+        if (count < 16)
+            calc.className = "page-link red"
+        else calc.className = "page-link";
+
         document.getElementById("choosen").innerHTML = count;
     }
 </script>
