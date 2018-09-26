@@ -12,9 +12,13 @@ menu_title: Тервер
 
 ---
 
-[Вторая неделя](practice/2_solved) ([Задачи](practice/2))
+[Четвертая неделя](practice/4.pdf)
 
-[Первая неделя](practice/1_solved) ([Задачи](practice/1))
+[Третья неделя](practice/3.pdf)
+
+[Вторая неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) | [Допы](practice/2d.pdf)
+
+[Первая неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) | [Допы](practice/1d.pdf)
 
 ---
 
