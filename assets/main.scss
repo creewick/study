@@ -54,7 +54,8 @@
     border-bottom: 1px solid #e8e8e8;
     padding: 0;
     display: flex;
-    position: sticky;
+    position: fixed;
+    align-self: center;
     width: 100%;
     background: #fdfdfd;
 }
