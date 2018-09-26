@@ -45,8 +45,8 @@
 }
 
 .scroll-hide {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-54px);
+    transform: translateY(-54px);
     transition: transform 100ms linear;
     will-change: transform;
 
@@ -61,8 +61,8 @@
 
 .scroll-hide.open {
     top: 62px;
-    -webkit-transform: none;
-    transform: none;
+    -webkit-transform: translateY(54px);
+    transform: translateY(54px);
     transition: transform 100ms linear;
 }
 
