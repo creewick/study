@@ -45,9 +45,9 @@
 }
 
 .scroll-hide {
-    -webkit-transform: translateY(-96%);
-    transform: translateY(-96%);
-    transition: transform 300ms linear;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    transition: transform 100ms linear;
     will-change: transform;
 
     z-index: 1;
@@ -63,7 +63,7 @@
     top: 62px;
     -webkit-transform: none;
     transform: none;
-    transition: transform 300ms linear;
+    transition: transform 100ms linear;
 }
 
 .site-title:focus,
