@@ -16,9 +16,9 @@ menu_title: Тервер
 
 [Третья неделя](practice/3.pdf)
 
-[Вторая неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) | [Допы](practice/2d.pdf)
+[Вторая неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) \| [Допы](practice/2d.pdf)
 
-[Первая неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) | [Допы](practice/1d.pdf)
+[Первая неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) \| [Допы](practice/1d.pdf)
 
 ---
 
