@@ -80,7 +80,7 @@
 </p>
 
 <label>
-    <input type="checkbox" onchange="count(this, 2)">
+    <input class="2 course" type="checkbox" onchange="count()">
     <h3>Дополнительные главы дискретной математики</h3>
 </label>
 <ul>
@@ -89,8 +89,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 3)">
-    <h3 id="6-основания-теории-функций">Основания теории функций</h3>
+    <input class="3 course" type="checkbox" onchange="count()">
+    <h3>Основания теории функций</h3>
 </label>
 
 <ul>
@@ -99,8 +99,8 @@
 </ul>
 
 <label>
-    <input type="checkbox"  onchange="count(this, 3)">
-    <h3 id="3-web-и-dhtml">WEB и DHTML</h3>
+    <input class="3 course" type="checkbox"  onchange="count()">
+    <h3>WEB и DHTML</h3>
 </label>
 
 <ul>
@@ -108,8 +108,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 3)">
-    <h3 id="6-учебная-проектная-деятельность">Учебная проектная деятельность</h3>
+    <input class="3 course" type="checkbox" onchange="count()">
+    <h3>Учебная проектная деятельность</h3>
 </label>
 
 <ul>
@@ -118,8 +118,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 3)">
-    <h3 id="6-основы-спортивного-программирования">Основы спортивного программирования</h3>
+    <input class="3 course" type="checkbox" onchange="count()">
+    <h3>Основы спортивного программирования</h3>
 </label>
 
 <ul>
@@ -128,8 +128,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 2)">
-    <h3 id="4-теория-вычислительной-сложности">Теория вычислительной сложности</h3>
+    <input class="2 course" type="checkbox" onchange="count()">
+    <h3>Теория вычислительной сложности</h3>
 </label>
 
 <ul>
@@ -138,8 +138,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 6)">
-    <h3 id="6-основы-компьютерной-безопасности">Основы компьютерной безопасности</h3>
+    <input class="6 course" type="checkbox" onchange="count()">
+    <h3>Основы компьютерной безопасности</h3>
 </label>
 
 <ul>
@@ -147,8 +147,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 3)">
-    <h3 id="6-низкоуровневое-программирование">Низкоуровневое программирование</h3>
+    <input class="3 course" type="checkbox" onchange="count()">
+    <h3>Низкоуровневое программирование</h3>
 </label>
 
 <ul>
@@ -157,8 +157,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 3)">
-    <h3 id="3-шаблоны-проектирования">Шаблоны проектирования</h3>
+    <input class="3 course" type="checkbox" onchange="count()">
+    <h3>Шаблоны проектирования</h3>
 </label>
 
 <ul>
@@ -166,8 +166,8 @@
 </ul>
 
 <label>
-    <input type="checkbox" onchange="count(this, 6)">
-    <h3 id="6-создание-веб-приложений-i">Создание Веб-приложений I</h3>
+    <input class="6 course" type="checkbox" onchange="count()">
+    <h3>Создание Веб-приложений I</h3>
 </label>
 
 <ul>
@@ -183,19 +183,18 @@
 
 <script>
     function count(checkbox, number) {
-        var counter = document.getElementById("choosen");
-        if (checkbox.checked)
-            counter.innerHTML = parseInt(counter.innerHTML) + number;
-        else counter.innerHTML = parseInt(counter.innerHTML) - number;
+        var courses = document.getElementsByClassName("course");
+        var count = 0;
 
-        if (parseInt(counter.innerHTML) < 16)
-            document.getElementById("calc").className = "red";
-        else
-            document.getElementById("calc").className = "";
+        for (let i = 0; i < courses.length; i++) {
+            if (courses[i].checked) {
+                count += courses[i].className[0];
+            }
+        }
+
+        document.getElementById("choosen").innerHTML = count;
     }
 </script>
-
-
       </div>
     </main>
   </body>
