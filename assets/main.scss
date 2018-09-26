@@ -45,8 +45,8 @@
 }
 
 .scroll-hide {
-    -webkit-transform: translateY(-54px);
-    transform: translateY(-54px);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
     transition: transform 100ms linear;
     will-change: transform;
 
@@ -54,15 +54,14 @@
     border-bottom: 1px solid #e8e8e8;
     padding: 0;
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 100%;
     background: #fdfdfd;
 }
 
 .scroll-hide.open {
-    top: 62px;
-    -webkit-transform: none;
-    transform: none;
+    -webkit-transform: translateY(62px);
+    transform: translateY(62px);
     transition: transform 100ms linear;
 }
 
