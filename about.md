@@ -8,7 +8,10 @@ title: Команда
 
 ## Состав
 
-[Илья](https://github.com/creewick)	[Иван](https://github.com/ZeroNetto)	[Руслан](https://github.com/sounditbox)	[Алексей](https://github.com/AllEXEcuted)
+* [Илья](https://github.com/creewick)
+* [Иван](https://github.com/ZeroNetto)
+* [Руслан](https://github.com/sounditbox)
+* [Алексей](https://github.com/AllEXEcuted)
 
 
 

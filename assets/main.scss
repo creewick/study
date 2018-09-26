@@ -56,18 +56,16 @@
     background: #fdfdfd;
     top: 62px;
 }
-    
+
+.site-title:focus,
 .site-title:hover,
+.site-title.selected,
 .menu .page-link:hover,
 .menu .page-link.selected,
-.site-title.selected {
+.menu .page-link:focus {
     border-bottom: 2px solid #3050a0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-.page-link:hover,
-.site-title:hover {
     outline: none;
 }
 
