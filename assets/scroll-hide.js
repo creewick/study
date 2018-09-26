@@ -10,7 +10,7 @@ window.onscroll = function() {
   }
 
   if (pageYOffset > 0) {
-    menu.style.boxShadow = "0 15px 20px -20px";
+    menu.style.boxShadow = "0 10px 10px -15px";
   } else {
     menu.style.boxShadow = "none";
   }
