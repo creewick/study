@@ -45,11 +45,12 @@
 }
 
 .scroll-hide {
+    will-change: top; 
+    transition: top 0.3s;
     z-index: 1;
     border-bottom: 1px solid #e8e8e8;
     padding: 0;
     display: flex;
-    transition: top 0.3s;
     position: sticky;
     width: 100%;
     background: #fdfdfd;
