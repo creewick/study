@@ -45,8 +45,11 @@
 }
 
 .scroll-hide {
-    will-change: top; 
-    transition: top 0.3s;
+    -webkit-transform: translateY(-96%);
+    transform: translateY(-96%);
+    transition: transform 300ms linear;
+    will-change: transform;
+
     z-index: 1;
     border-bottom: 1px solid #e8e8e8;
     padding: 0;
@@ -54,7 +57,13 @@
     position: sticky;
     width: 100%;
     background: #fdfdfd;
+}
+
+.scroll-hide.open {
     top: 62px;
+    -webkit-transform: none;
+    transform: none;
+    transition: transform 300ms linear;
 }
 
 .site-title:focus,
