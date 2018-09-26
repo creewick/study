@@ -47,7 +47,7 @@
 .scroll-hide {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
-    transition: transform 300ms linear;
+    transition: transform 150ms linear;
     will-change: transform;
 
     z-index: 1;
@@ -63,7 +63,7 @@
 .scroll-hide.open {
     -webkit-transform: translateY(62px);
     transform: translateY(62px);
-    transition: transform 300ms linear;
+    transition: transform 150ms linear;
 }
 
 .site-title:focus,
@@ -79,7 +79,7 @@
 }
 
 .page-content {
-    padding: 0 0 30px 0;
+    padding: 30px 0;
 }
 
 hr {
