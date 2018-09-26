@@ -66,6 +66,11 @@
     text-decoration: none;
 }
 
+.page-link:hover,
+.site-title:hover {
+    outline: none;
+}
+
 .page-content {
     padding: 0 0 30px 0;
 }
