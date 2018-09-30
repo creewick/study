@@ -3,6 +3,8 @@ title: ""
 ---
 # Новости
 
+Комбалг, [коды алгоритмов](courses/combalg/codes)
+
 Догнали [всё по терверу](courses/terver)
 
 Добавили [лабораторные по комбалгу](courses/combalg)
