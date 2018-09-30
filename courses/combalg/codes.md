@@ -345,6 +345,6 @@ while True:
             else:
                 F[v][w] -= h[t]
             v = w
-    if h[t] = sys.maxsize:
+    if h[t] == sys.maxsize:
         break
 ```
