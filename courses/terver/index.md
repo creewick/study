@@ -12,6 +12,12 @@ menu_title: Тервер
 
 ---
 
+[Первая контрольная](practice/1c.pdf)
+
+---
+
+[Пятая неделя](practice/5.pdf)
+
 [Четвертая неделя](practice/4.pdf)
 
 [Третья неделя](practice/3.pdf)
