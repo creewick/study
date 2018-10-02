@@ -1,13 +1,19 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("scroll-hide")[0].style.top = "62px";
-    document.getElementsByClassName("site-header")[0].style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+  var menu = document.getElementsByClassName("scroll-hide")[0];
 
+  if (prevScrollpos > currentScrollPos) {
+    menu.className = "menu wrapper scroll-hide open";
   } else {
-    document.getElementsByClassName("scroll-hide")[0].style.top = "8px";
-    document.getElementsByClassName("site-header")[0].style.backgroundColor = "white";
+    menu.className = "menu wrapper scroll-hide";
   }
+
+  if (pageYOffset > 0) {
+    menu.style.boxShadow = "0 10px 10px -15px";
+  } else {
+    menu.style.boxShadow = "none";
+  }
+  
   prevScrollpos = currentScrollPos;
 } 

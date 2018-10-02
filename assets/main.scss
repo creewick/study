@@ -6,7 +6,6 @@
 .site-header {
     border-top: 5px solid #3050a0;
     background-color: white;
-    transition: background-color 0.5s;
     position: sticky;
     z-index: 2;
     top: 0;
@@ -46,28 +45,40 @@
 }
 
 .scroll-hide {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+    transition: transform 200ms linear;
+    will-change: transform;
+
     z-index: 1;
     border-bottom: 1px solid #e8e8e8;
-    padding: 0;
     display: flex;
-    transition: all 0.3s;
-    position: sticky;
+    position: fixed;
+    align-self: center;
     width: 100%;
-    background: rgba(253, 253, 253, 0.9);
-    top: 62px;
+    background: #fdfdfd;
 }
-    
+
+.scroll-hide.open {
+    -webkit-transform: translateY(62px);
+    transform: translateY(62px);
+    transition: transform 200ms linear;
+}
+
+.site-title:focus,
 .site-title:hover,
+.site-title.selected,
 .menu .page-link:hover,
 .menu .page-link.selected,
-.site-title.selected {
+.menu .page-link:focus {
     border-bottom: 2px solid #3050a0;
     box-sizing: border-box;
     text-decoration: none;
+    outline: none;
 }
 
 .page-content {
-    padding: 0 0 30px 0;
+    padding: 30px 0;
 }
 
 hr {
