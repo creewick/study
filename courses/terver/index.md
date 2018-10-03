@@ -12,7 +12,7 @@ menu_title: Тервер
 
 ---
 
-[Первая контрольная](practice/1c.pdf)
+[Первая контрольная](practice/1c.pdf) Дедлайн: ****
 
 ---
 
@@ -28,7 +28,17 @@ menu_title: Тервер
 
 ---
 
-**Почта для задач:** mathmechterver@gmail.com
+[Таблица успеваемости](https://docs.google.com/spreadsheets/d/1b-pdPVdhN5l8JFRcTQlVY7NOOkunb1HAMGAYtv6VifE/edit#gid=0)
+
+Зеленые: Автомат
+
+Синие: Номинанты (отправьте 4-ую ДЗ)
+
+Желтые: Полуавтомат
+
+---
+
+**Почта для ДЗ:** mathmechterver@gmail.com
 
 [Регламент курса](https://docs.google.com/document/d/11hwt5iI8w8OMd6HvdSK6FvEmuNv0xnQ3ynRbrenP8DI/edit)
 
@@ -62,11 +72,19 @@ menu_title: Тервер
 
 ### Презентации:
 
-[Вторая пара](files/лекция2.pdf)
+[Пятая](files/лекция5.pdf)
 
-[Первая пара](files/лекция1.pdf)
+[Четвертая](files/лекция4.pdf)
+
+[Третья](files/лекция3.pdf)
+
+[Вторая](files/лекция2.pdf)
+
+[Первая](files/лекция1.pdf)
 
 ---
+
+[Таблица успеваемости](https://docs.google.com/spreadsheets/d/1hknd5cHfdv8rGzEVAx_11nrOd75yYCrHjLHA2q2FlTI/edit#gid=1860401608)
 
 [Конспекты 1 семестр](files/конспект1.pdf)
 
