@@ -12,19 +12,19 @@ menu_title: Тервер
 
 ---
 
-[Первая контрольная](practice/1c.pdf) Дедлайн: ****
+[Первая контрольная](practice/1c.pdf) Дедлайн: 19 октября 00:00
 
 ---
 
-[Пятая неделя](practice/5.pdf)
+[5 неделя](practice/5.pdf)
 
-[Четвертая неделя](practice/4.pdf)
+[4 неделя](practice/4.pdf)
 
-[Третья неделя](practice/3.pdf)
+[3 неделя](practice/3.pdf)
 
-[Вторая неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) \| [Допы](practice/2d.pdf)
+[2 неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) \| [Допы](practice/2d.pdf)
 
-[Первая неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) \| [Допы](practice/1d.pdf)
+[1 неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) \| [Допы](practice/1d.pdf)
 
 ---
 
@@ -46,6 +46,8 @@ menu_title: Тервер
 
 Домашняя работа: 30 б.
 
+Первый семестр:
+
 - Допуск к зачету: 40 б.
 - "4" - 60 б.
 - "5" - 80 б.
@@ -66,21 +68,17 @@ menu_title: Тервер
 
 ---
 
-[Конспект 1](lectures/1)
-
-
-
 ### Презентации:
 
-[Пятая](files/лекция5.pdf)
+[5 лекция](files/лекция5.pdf)
 
-[Четвертая](files/лекция4.pdf)
+[4 лекция](files/лекция4.pdf)
 
-[Третья](files/лекция3.pdf)
+[3 лекция](files/лекция3.pdf)
 
-[Вторая](files/лекция2.pdf)
+[2 лекция](files/лекция2.pdf)
 
-[Первая](files/лекция1.pdf)
+[1 лекция](files/лекция1.pdf)
 
 ---
 
