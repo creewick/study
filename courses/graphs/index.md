@@ -11,6 +11,8 @@ menu_title: Графы
 
 ---
 
+[Третья пара](lectures/3)
+
 [Вторая пара](lectures/2)
 
 [Первая пара](lectures/1)
