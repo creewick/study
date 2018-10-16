@@ -16,15 +16,13 @@ menu_title: Тервер
 
 ---
 
-[5 неделя](practice/5.pdf)
-
-[4 неделя](practice/4.pdf)
-
-[3 неделя](practice/3.pdf)
-
-[2 неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) \| [Допы](practice/2d.pdf)
-
-[1 неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) \| [Допы](practice/1d.pdf)
+* [7 неделя](practice/7.pdf)
+* [6 неделя](practice/6.pdf)
+* [5 неделя](practice/5.pdf)
+* [4 неделя](practice/4.pdf)
+* [3 неделя](practice/3.pdf)
+* [2 неделя](practice/2.pdf) Решения: [Пара](practice/2b.pdf) \| [Допы](practice/2d.pdf)
+* [1 неделя](practice/1.pdf) Решения: [Пара](practice/1b.pdf) \| [Допы](practice/1d.pdf)
 
 ---
 
@@ -70,15 +68,11 @@ menu_title: Тервер
 
 ### Презентации:
 
-[5 лекция](files/лекция5.pdf)
-
-[4 лекция](files/лекция4.pdf)
-
-[3 лекция](files/лекция3.pdf)
-
-[2 лекция](files/лекция2.pdf)
-
-[1 лекция](files/лекция1.pdf)
+* [5 лекция](files/лекция5.pdf)
+* [4 лекция](files/лекция4.pdf)
+* [3 лекция](files/лекция3.pdf)
+* [2 лекция](files/лекция2.pdf)
+* [1 лекция](files/лекция1.pdf)
 
 ---
 

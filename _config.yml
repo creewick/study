@@ -11,6 +11,9 @@ header_pages:
   - courses/assembler/index.md
   - courses/graphs/index.md
   - courses/funcan/index.md
+  - courses/yandex/js.md
+  - courses/yandex/markup.md
+  - courses/hackerdom/index.md
 
 defaults:
   -

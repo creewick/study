@@ -16,8 +16,9 @@ title: 3 курс
 * [Web](web)
 * [Матроиды и графы](graphs)
 * [Функциональный анализ](funcan)
-
-
+* [Яндекс.JavaScript](yandex/js)
+* [Яндекс.Markup](yandex/markup)
+* [Хакердом](hackerdom)
 
 # Пройденные курсы
 
