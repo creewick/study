@@ -14,7 +14,7 @@
 .menu { 
     white-space: nowrap; 
     -ms-overflow-style: none;
-    overflow-x: auto;
+    overflow-x: -moz-scrollbars-none;
     display: flex;
 }
 
