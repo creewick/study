@@ -9,6 +9,8 @@ menu_title: .asm
 
 ---
 
+[Шестая лекция](lectures/6)
+
 [Пятая лекция](lectures/5)
 
 [Четвертая лекция](lectures/4)
