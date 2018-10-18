@@ -9,6 +9,8 @@ menu_title: Алгоритмы
 
 ---
 
+[Лекция 5](lectures/5)
+
 [Лекция 4](lectures/4)
 
 [Лекция 3](lectures/3)
