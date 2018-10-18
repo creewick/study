@@ -59,7 +59,36 @@ title: Протоколы Интернет
 
 #### Лекция № 4. Служба DNS, принципы работы
 
+* [Презентация](lectures/4.pdf)
+* [Книга про DNS и BIND](lectures/4dnsbook.pdf)
+* [DOMAIN NAMES - CONCEPTS AND FACILITIES, RFC-1034](lectures/4rfc1034.pdf)
+* [Доменные имена - реализация и спецификация, RFC-1035](lectures/4rfc1035.pdf)
 
+#### Практика № 4. Работа с BGP
+
+Работа с BGP: базы RIS'ов, утилита BGPlay, Looking glass, сервис whois и т. д.
+
+* [Работа с BGP, написание своей whois утилиты](practice/4.pdf)
+* [Search RIPEstat](https://stat.ripe.net/)
+* [Джентельменский набор для работы с BGP](http://nt.ua/aboutcenter/articles/Pages/samoilenko_bgp_2013.aspx)
+
+#### Лекция № 5. Служба DNS, описание зоны, настройка BIND
+
+* [Презентация](lectures/5.pdf)
+
+#### Практика № 5. Работа с утилитами nslookup и dig
+
+* [План практики](practice/5.pdf)
+* [Самостоятельная работа по nslookup](practice/5nslookup.pdf)
+
+#### Лекция № 6. Служба DNS, основы асимметричной криптографии и расширения DNSSEC
+
+* [Презентация](lectures/6.pdf)
+* [Вопросы к пятиминутке](lectures/6q)
+
+#### Практика № 6. Настройка BIND, создание своего "Интернета"
+
+* 
 
 ## Конспекты
 
