@@ -1,5 +1,6 @@
 ---
 title: Протоколы Интернет
+toc: true
 ---
 
 Солодушкин Святослав Игоревич
@@ -88,7 +89,40 @@ title: Протоколы Интернет
 
 #### Практика № 6. Настройка BIND, создание своего "Интернета"
 
-* 
+* [План практики](practice/6.pdf)
+* [BIND 9 Manual](practice/6bind.pdf)
+* [Архив с настройками](practice/6.zip)
+
+#### Лекция № 7. Служба e-mail, протокол SMTP, борьба со спамом
+
+* [Презентация](lectures/7.pdf)
+* [Простой протокол передачи электронной почти (SMTP), RFC-5321](lectures/7rfc5321.pdf)
+* [Формат сообщений Internet, RFC-5322](lectures/7rfc5322.pdf)
+* [Почтовый сервер для начинающих](http://interface31.ru/tech_it/2010/10/pochtovyj-server-dlya-nachinayushhix-nastraivaem-dns-zonu.html), три статьи про найстроку почтового сервера без привязки к конкретной программе
+
+#### Лекция № 8. Служба e-mail, протокол POP и IMAP
+
+* [Презентация](lectures/8.pdf)
+* [Протокол POP3, лекция на INUIT](http://www.intuit.ru/studies/courses/116/116/lecture/3365)
+* [Протокол IMAP, лекция на INUIT](http://www.intuit.ru/studies/courses/116/116/lecture/3367)
+
+#### Лекция № 9. Служба передачи файлов, протокол FTP и BitTorrent 
+
+* [Презентация FTP](lectures/9ftp.pdf)
+* [Презентация BitTorrent](lectures/9bit.pdf)
+* [Опорный конспект по BitTorrent](lectures/9bit2.pdf)
+
+#### Лекция № 10. Протокол TCP: повышение производительности 
+
+* [Презентация](lectures/10.pdf)
+* [Transmission Control Protocol, RFC-793](lectures/10rfc793.pdf)
+
+#### Лекция № 11. Протокол HTTP 
+
+* [Конспект лекции](lectures/11.pdf)
+* [Перевод документации, RFC-2616](lectures/11rfc2616.html)
+
+
 
 ## Конспекты
 
