@@ -9,15 +9,15 @@ menu_title: .asm
 
 ---
 
-[Шестая лекция](lectures/6)
+[Лекция 6](lectures/6)
 
-[Пятая лекция](lectures/5)
+[Лекция 5](lectures/5)
 
-[Четвертая лекция](lectures/4)
+[Лекция 4](lectures/4)
 
-[Третья лекция](lectures/3)
+[Лекция 3](lectures/3)
 
-[Вторая лекция](lectures/2)
+[Лекция 2](lectures/2)
 
-[Первая лекция](lectures/1)
+[Лекция 1](lectures/1)
 
