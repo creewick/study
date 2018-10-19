@@ -24,7 +24,7 @@ toc: true
 * [Презентация](lectures/1.pdf)
 * [Вопросы к пятиминутке](lectures/1q)
 
-### Практика № 1. Маршрутизация (статическая и RIP)
+#### Практика № 1. Маршрутизация (статическая и RIP)
 
 * [Базовая настройка, VLAN и NAT. Настройка RIP](practice/1.pdf)
 * [Протоколы маршрутизации, список команд с объяснениями, CISCO](practice/1commands.pdf)
@@ -38,7 +38,7 @@ toc: true
 * [Руководство по проектированию OSPF, CISCO](lectures/2ospfManual.pdf)
 * [Типы областей OSPF и соответстующие LSA](http://habrahabr.ru/post/162163/)
 
-### Практика № 2. Маршрутизация, OSPF
+#### Практика № 2. Маршрутизация, OSPF
 
 * [Настройка протокола OSPF на устройствах CISCO](practice/2.pdf)
 * [Сборка сети, одна область](practice/2sborka1.pkt)
@@ -53,7 +53,7 @@ toc: true
 * [Руководство по созданию, выбору и регистрации автономных систем, RFC-1930](lectures/3rfc1930.pdf)
 * [Протокол BGP-4, RFC-4271](lectures/3rfc4271.pdf)
 
-### Практика № 3. Маршрутизация, протокол BGP-4
+#### Практика № 3. Маршрутизация, протокол BGP-4
 
 * [Настройка протокола BGP на устройствах CISCO](practice/3.pdf)
 * [Сборка сети](practice/3sborka.pkt)
@@ -65,7 +65,7 @@ toc: true
 * [DOMAIN NAMES - CONCEPTS AND FACILITIES, RFC-1034](lectures/4rfc1034.pdf)
 * [Доменные имена - реализация и спецификация, RFC-1035](lectures/4rfc1035.pdf)
 
-### Практика № 4. Работа с BGP
+#### Практика № 4. Работа с BGP
 
 Работа с BGP: базы RIS'ов, утилита BGPlay, Looking glass, сервис whois и т. д.
 
@@ -77,7 +77,7 @@ toc: true
 
 * [Презентация](lectures/5.pdf)
 
-### Практика № 5. Работа с утилитами nslookup и dig
+#### Практика № 5. Работа с утилитами nslookup и dig
 
 * [План практики](practice/5.pdf)
 * [Самостоятельная работа по nslookup](practice/5nslookup.pdf)
@@ -87,7 +87,7 @@ toc: true
 * [Презентация](lectures/6.pdf)
 * [Вопросы к пятиминутке](lectures/6q)
 
-### Практика № 6. Настройка BIND, создание своего "Интернета"
+#### Практика № 6. Настройка BIND, создание своего "Интернета"
 
 * [План практики](practice/6.pdf)
 * [BIND 9 Manual](practice/6bind.pdf)
